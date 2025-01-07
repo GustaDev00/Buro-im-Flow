@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   position: relative;
-  padding: 9.2rem 16.3rem;
+  padding: 9.2rem 11.7rem;
   z-index: 2;
 
   ${mediaMaxWidth("isMobileOrTabletVertical")`

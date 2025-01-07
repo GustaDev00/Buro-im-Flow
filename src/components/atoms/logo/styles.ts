@@ -1,13 +1,15 @@
 import styled from "styled-components";
+import { LazyImage } from "../lazy-image";
 import { mediaMaxWidth } from "@/utils/media-query";
 import _Link from "next/link";
 
-export const Link = styled(_Link)`
-  svg {
-    width: 22.5rem;
+export const Link = styled(_Link)``;
 
-    ${mediaMaxWidth("mobile")`
-      width: 14rem;
-    `}
-  }
+export const Logo = styled(LazyImage)`
+  height: 10.5rem;
+  object-fit: contain;
+
+  ${mediaMaxWidth("mobile")`
+    height: 6.2rem;
+  `}
 `;

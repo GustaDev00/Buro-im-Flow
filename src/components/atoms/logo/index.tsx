@@ -1,8 +1,8 @@
 import * as S from "./styles";
-import { LogoIcon } from "@/components/svgs/logo";
+import C from "./constants";
 
 export const Logo = ({ className }: { className?: string }) => (
-  <S.Link href="/" className={className}>
-    <LogoIcon />
+  <S.Link href="/">
+    <S.Logo {...C.logo} className={className} />
   </S.Link>
 );

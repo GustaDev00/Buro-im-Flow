@@ -4,8 +4,8 @@ import { mediaMaxWidth } from "@/utils/media-query";
 import styled from "styled-components";
 
 export const Header = styled.header`
-  position: fixed;
-  top: 8.6rem;
+  position: absolute;
+  top: 6.4rem;
   width: 100%;
 
   ${mediaMaxWidth("mobile")`
@@ -14,7 +14,7 @@ export const Header = styled.header`
 `;
 
 export const Wrapper = styled.div`
-  padding: 0 15.3rem;
+  padding: 0 11.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,29 +27,55 @@ export const Wrapper = styled.div`
 export const Logo = styled(_Logo)``;
 
 export const Line = styled.div`
-  width: 2.4rem;
-  height: 0.2rem;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 6rem;
+  height: 0.3rem;
+  background: #405E20;
   transition: transform 0.4s ease;
+
+  &:nth-of-type(1){
+    width: 1.10rem;
+  }
+
+  &:nth-of-type(2){
+    width: 1.65rem;
+  }
+
+  &:nth-of-type(3){
+    width: 2.15rem;
+  }
 
   ${mediaMaxWidth("mobile")`
     width: 2rem;
   `}
 `;
 
-export const Menu = styled.button`
-  width: 6rem;
-  height: 6rem;
-  border-radius: 3rem;
-  border: 0.1rem solid rgba(255, 255, 255, 0.05);
-  background: rgba(255, 255, 255, 0.05);
+export const Group = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-end; // Alinha na vertical se flex direction column for ROW - horizontal
+  justify-content: center; // Alinha na horizontal - vertical
+  gap: 0.55rem; // espaco dos itens 
+  `;
+
+export const Text = styled.p`
+  color: #405E20;
+  font-family: var(--syne);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  
+  
+`;
+
+export const Menu = styled.button`
+  border-radius: 3rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255);
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.7rem;
+  gap: 1rem;
   transition: background 0.4s ease, box-shadow 0.4s ease;
+  padding: 1.15rem 2.75rem ;
 
   &:hover {
     background: rgba(255, 255, 255, 0.05);

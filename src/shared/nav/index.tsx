@@ -15,8 +15,12 @@ export default () => {
       <S.Wrapper>
         <S.Logo />
         <S.Menu onClick={handleClick}>
-          <S.Line />
-          <S.Line />
+          <S.Text>Menu</S.Text>
+          <S.Group>
+            <S.Line />
+            <S.Line />
+            <S.Line />
+          </S.Group>
         </S.Menu>
 
         <S.Overlay $open={open}>
