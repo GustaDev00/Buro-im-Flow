@@ -1,10 +1,10 @@
-import { useCallback, useState } from "react";
+  import { useCallback, useState } from "react";
 import * as S from "./styles";
 import C from "@/constants";
 
 export default () => {
   const [open, setOpen] = useState(false);
-  const { navigation, social_share } = C.data;
+  const {contact, navigation} = C.data
 
   const handleClick = useCallback(() => {
     setOpen((prev) => !prev);
@@ -14,6 +14,18 @@ export default () => {
     <S.Header>
       <S.Wrapper>
         <S.Logo />
+        <S.Nav>
+          <S.Items>
+            <S.Link href={contact[0].link}>
+              <S.Phone />
+              {contact[0].content}
+            </S.Link>
+          </S.Items>
+          <S.Link href={navigation[5]?.href}>
+            <S.Externa />
+            {navigation[5].text}
+          </S.Link>
+        </S.Nav>
         <S.Menu onClick={handleClick}>
           <S.Text>Menu</S.Text>
           <S.Group>
@@ -39,13 +51,6 @@ export default () => {
                   ))}
                 </S.List>
               </S.MainModal>
-              <S.FooterModal>
-                {social_share.map(({ title, link, icon: Icon }) => (
-                  <S.Social key={title} href={link} target="_blank">
-                    <Icon />
-                  </S.Social>
-                ))}
-              </S.FooterModal>
             </S.WrapperModal>
           </S.Modal>
           <S.Black onClick={handleClick} />

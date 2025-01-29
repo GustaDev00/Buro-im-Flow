@@ -43,7 +43,7 @@ export const GlobalStyles = createGlobalStyle`
     `}
 
     ${mediaMaxWidth("mobileVerticalHorizontal")`
-      font-size: calc(100vw / ${390} * 10);
+      font-size: calc(100vw / ${430} * 10);
     `}
 
     ${mediaMaxWidth("mobileHorizontal")`
@@ -52,7 +52,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: #151515;
+    background: #F8F8F8;
     position: relative;
   }
 

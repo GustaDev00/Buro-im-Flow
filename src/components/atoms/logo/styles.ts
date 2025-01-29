@@ -10,6 +10,6 @@ export const Logo = styled(LazyImage)`
   object-fit: contain;
 
   ${mediaMaxWidth("mobile")`
-    height: 6.2rem;
+    height: 8.5rem;
   `}
 `;

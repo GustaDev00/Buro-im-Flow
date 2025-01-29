@@ -2,29 +2,81 @@ import { Logo as _Logo } from "@/components/atoms/logo";
 import { ArrowLinkIcon } from "@/components/svgs/arrow-link-up";
 import { mediaMaxWidth } from "@/utils/media-query";
 import styled from "styled-components";
+import { FaPhone } from "react-icons/fa6";
+import { FiExternalLink } from "react-icons/fi";
+
+
 
 export const Header = styled.header`
   position: absolute;
   top: 6.4rem;
   width: 100%;
+  z-index: 10;
 
   ${mediaMaxWidth("mobile")`
-    top: 2rem;
+    top: 0rem;
   `}
 `;
 
 export const Wrapper = styled.div`
   padding: 0 11.7rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 23.8rem;
 
-  ${mediaMaxWidth("mobile")`
-    padding: 0 2.2rem;
+  ${mediaMaxWidth('isMobileOrTabletVertical')`
+    padding: 0 1.8rem;
+    gap: 0;
+    justify-content: space-between;
   `}
+
+${mediaMaxWidth('mobile')`
+  padding-top: 4.4rem;
+`}
 `;
 
-export const Logo = styled(_Logo)``;
+export const Logo = styled(_Logo)`
+
+  ${mediaMaxWidth('mobile')``}
+`;
+
+export const Nav = styled.ul`
+  display: flex;
+  gap: 5.6rem;
+
+  ${mediaMaxWidth("mobile")`
+    display: none;
+  `} 
+`;
+
+export const Items = styled.li`
+  color: white;
+
+`;
+
+export const Phone = styled(FaPhone)`
+  height: 3.4rem;
+`;
+
+export const Externa = styled(FiExternalLink)`
+
+`;
+
+export const Link = styled.a`
+  text-decoration: underline;
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: -0.1012rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+
+
+`;
 
 export const Line = styled.div`
   height: 0.3rem;
@@ -61,13 +113,13 @@ export const Text = styled.p`
   font-family: var(--syne);
   text-align: center;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 500;
   
   
 `;
 
 export const Menu = styled.button`
-  border-radius: 3rem;
+  border-radius: 3.7rem;
   border: 0.1rem solid rgba(255, 255, 255, 0.05);
   background: rgba(255, 255, 255);
   display: flex;
@@ -76,6 +128,7 @@ export const Menu = styled.button`
   gap: 1rem;
   transition: background 0.4s ease, box-shadow 0.4s ease;
   padding: 1.15rem 2.75rem ;
+  margin: 0 0 0 auto;
 
   &:hover {
     background: rgba(255, 255, 255, 0.05);
@@ -92,10 +145,18 @@ export const Menu = styled.button`
     }
   }
 
+  ${mediaMaxWidth('isMobileOrTabletVertical')`
+    margin:  0;
+`}
+
   ${mediaMaxWidth("mobile")`
-    width: 4rem;
-    height: 4rem;
-    gap: 0.5rem;
+    display: flex;
+  width: 14.8rem;
+  height: 4.5rem;
+  padding: 0rem 1.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   `}
 `;
 
