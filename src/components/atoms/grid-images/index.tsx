@@ -1,10 +1,8 @@
 import * as S from "./styles";
-import type { GridImagesProps } from "./props";
-import { FC } from "react";
 import { CustomBr } from "../custom-br";
 import { ResponsiveElement } from "@/utils/responsive-element";
 
-export const GridImages: FC<GridImagesProps> = ({}) => {
+export const GridImages = () => {
   return (
     <S.GridImages>
       <S.Wrapper>
