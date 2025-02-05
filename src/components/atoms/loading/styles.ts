@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { LazyImage } from "../lazy-image";
 
 export const Loading = styled.div<{ $isActive: boolean }>`
   position: fixed;
@@ -7,7 +6,7 @@ export const Loading = styled.div<{ $isActive: boolean }>`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: ${({ theme }) => theme.antiFlashWhite};
+  background: #405e20;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,17 +18,16 @@ export const Loading = styled.div<{ $isActive: boolean }>`
 
 export const Container = styled.div`
   position: relative;
-  border: 0.3rem solid ${({ theme }) => theme.rosewood};
+  border: 0.3rem solid #fff;
   padding: 5rem;
   border-radius: 50%;
 `;
 
-export const Img = styled(LazyImage)``;
-
 export const ProgressMensage = styled.p`
   position: absolute;
+  color: #fff;
   left: 50%;
-  margin-top: 8rem;
+  margin-top: -1rem;
   transform: translateX(-50%);
   font-size: 1.8rem;
   text-align: center;

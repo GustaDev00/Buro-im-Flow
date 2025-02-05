@@ -8,12 +8,15 @@ export const Intro = styled.div``;
 export const Wrapper = styled(_Wrapper)`
   background: #f8f8f8;
   padding-top: 5rem;
+  gap: 3.2rem;
 `;
+
+export const Card = styled.div``;
 
 export const Container = styled.div`
   display: flex;
   width: 100%;
-  padding: 6.1rem 10.2rem;
+  padding: 6.1rem 8.2rem;
   flex-direction: column;
   align-items: flex-start;
   background-color: #fff;

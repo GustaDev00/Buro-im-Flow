@@ -80,6 +80,7 @@ export const Img = styled(LazyImage)`
   width: 66rem;
   height: 65.6rem;
   object-fit: cover;
+  border-radius: 2.1rem;
 
   ${mediaMaxWidth("mobile")`
     width: 100%;

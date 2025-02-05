@@ -8,6 +8,8 @@ import { theme } from "@/styles/theme";
 import { GlobalStyles } from "@/styles/global";
 import { GSAPInitializer } from "@/components/atoms/gsap-initializer";
 import Nav from "@/shared/nav";
+import { Footer } from "@/shared/footer";
+import { Loading } from "@/components/atoms/loading";
 
 const RootLayout = ({
   children,
@@ -21,12 +23,12 @@ const RootLayout = ({
           <ThemeProvider theme={theme}>
             <GlobalStyles />
             <GSAPInitializer />
+            <Loading />
             <Nav />
             <main>
-              <Suspense>
-              {children}
-              </Suspense>
+              <Suspense>{children}</Suspense>
             </main>
+            <Footer />
           </ThemeProvider>
         </StyledComponentsRegistry>
       </body>

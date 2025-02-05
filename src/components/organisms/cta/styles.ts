@@ -1,0 +1,127 @@
+import styled from "styled-components";
+import { FiBarChart2 } from "react-icons/fi";
+import { ButtonSwipe } from "@/components/atoms/button-swipe";
+import { mediaMaxWidth } from "@/utils/media-query";
+
+export const Cta = styled.div`
+  background: #2a3f14;
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.1rem;
+  padding: 8.6rem 0;
+
+  ${mediaMaxWidth("isMobileOrTabletVertical")`
+    padding: 16rem 0;
+  `}
+
+  ${mediaMaxWidth("mobile")`
+    padding: 12rem 2.2rem;
+  `}
+`;
+
+export const CircleG = styled.div`
+  background-color: #ffffff26;
+  border-radius: 100px;
+  width: 9.3rem;
+  height: 9.3rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+`;
+
+export const CircleM = styled.div`
+  background-color: #ffffff0d;
+  border-radius: 100px;
+  width: 6.5rem;
+  height: 6.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+`;
+
+export const CircleP = styled.div`
+  background-color: #405e20;
+  border-radius: 100px;
+  width: 4.5818rem;
+  height: 4.5818rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+`;
+
+export const Chart = styled(FiBarChart2)`
+  color: white;
+  width: 2.7611rem;
+  height: 2.7611rem;
+`;
+
+export const Title = styled.h2`
+  color: #fff;
+  text-align: center;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 7rem;
+
+  ${mediaMaxWidth("isMobileOrTabletVertical")`
+    font-size: 5.2rem;
+  `}
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 3.3rem;
+    line-height: 5.2rem;
+  `}
+`;
+
+export const Text = styled.p`
+  width: 60%;
+  color: #fafafa;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 4.6rem;
+  letter-spacing: -0.1417rem;
+
+  ${mediaMaxWidth("isMobileOrTabletVertical")`
+    width: 80%;
+  `}
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: -0.1012rem;
+  `}
+`;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 3.4rem;
+
+  ${mediaMaxWidth("mobile")`
+    flex-direction: column;
+  `}
+`;
+
+export const Button1 = styled(ButtonSwipe)`
+  color: #242222;
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+    justify-content: center;
+  `}
+`;
+
+export const Button2 = styled(ButtonSwipe)`
+  background: transparent;
+  color: #fff;
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+    justify-content: center;
+  `}
+`;

@@ -4,6 +4,20 @@ import { TwitterIcon } from "@/components/svgs/twitter";
 
 export default {
   data: {
+    footer: {
+      copyrigth: {
+        text: (
+          <>
+            © Copyright 2025 <b>Büro im Flow</b>
+          </>
+        ),
+        fiber: (
+          <>
+            Mit 💚 entwickelt von <a href="https://www.fiberweb.ch/">FiberWeb.ch</a>
+          </>
+        ),
+      },
+    },
     navigation: [
       { title: "Home", href: "/" },
       { title: "Privatkunden", href: "/privatkunden" },
@@ -34,11 +48,6 @@ export default {
         title: "Facebook",
         link: "https://www.facebook.com/",
         icon: FacebookIcon,
-      },
-      {
-        title: "Twitter",
-        link: "https://x.com/home",
-        icon: TwitterIcon,
       },
     ],
   },

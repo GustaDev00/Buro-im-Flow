@@ -1,10 +1,10 @@
-  import { useCallback, useState } from "react";
+import { useCallback, useState } from "react";
 import * as S from "./styles";
 import C from "@/constants";
 
 export default () => {
   const [open, setOpen] = useState(false);
-  const {contact, navigation} = C.data
+  const { contact, navigation } = C.data;
 
   const handleClick = useCallback(() => {
     setOpen((prev) => !prev);
@@ -40,17 +40,29 @@ export default () => {
             <S.WrapperModal>
               <S.HeaderModal>
                 <S.TextMenu>Menu</S.TextMenu>
-                <S.ButtonClose onClick={handleClick} />
+                <S.ButtonClose onClick={handleClick}>Fechar</S.ButtonClose>
               </S.HeaderModal>
               <S.MainModal>
                 <S.List>
                   {navigation.map(({ title, href }) => (
                     <S.Item key={title} href={href}>
-                      {title} <S.Arrow />
+                      {title}
                     </S.Item>
                   ))}
                 </S.List>
               </S.MainModal>
+              <S.FooterModal>
+                <S.Social>
+                  <a href={C.data.contact[0].link}>
+                    <span>Phone:</span> +41 79 934 67 83
+                  </a>
+                </S.Social>
+                <S.Social>
+                  <a href={C.data.contact[1].link}>
+                    <span>E-Mail:</span> info@bueroimflow.ch
+                  </a>
+                </S.Social>
+              </S.FooterModal>
             </S.WrapperModal>
           </S.Modal>
           <S.Black onClick={handleClick} />

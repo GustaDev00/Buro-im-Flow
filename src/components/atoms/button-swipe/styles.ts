@@ -1,5 +1,4 @@
 import { mediaMaxWidth } from "@/utils/media-query";
-import Link from "next/link";
 import styled, { css } from "styled-components";
 
 const swipeStyles = css`
@@ -37,7 +36,7 @@ const swipeStyles = css`
   ${mediaMaxWidth("mobile")`
     padding: 1.7rem 3rem;
     gap: 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   `}
 `;
 
@@ -45,6 +44,6 @@ export const ButtonSwipe = styled.button`
   ${swipeStyles}
 `;
 
-export const LinkSwipe = styled(Link)`
+export const LinkSwipe = styled.a`
   ${swipeStyles}
 `;
