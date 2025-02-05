@@ -151,7 +151,7 @@ export const Footer = () => {
             </S.Line>
 
             <S.SocialShare>
-              {C.data.social_share.map(({ link, icon: Icon, title }, index) => (
+              {C.data.social_share.map(({ link, icon: Icon, title }) => (
                 <S.Link href={link} title={title} key={title}>
                   <S.Icon>
                     <Icon />

@@ -1,5 +1,4 @@
 import { Logo as _Logo } from "@/components/atoms/logo";
-import { ArrowLinkIcon } from "@/components/svgs/arrow-link-up";
 import { mediaMaxWidth } from "@/utils/media-query";
 import styled from "styled-components";
 import { FaPhone } from "react-icons/fa6";

@@ -1,6 +1,4 @@
 import { CustomBr } from "@/components/atoms/custom-br";
-import { MoneyIcon } from "@/components/svgs/money";
-import C from "@/constants";
 
 export default {
   contact: {

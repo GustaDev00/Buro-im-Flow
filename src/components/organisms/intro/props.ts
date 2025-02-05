@@ -8,4 +8,4 @@ export interface IntroProps {
       src: string;
     };
   }[];
-}\
+}

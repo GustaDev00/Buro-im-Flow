@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
 import { ListItens } from "@/components/molecules/list-itens";
 import { ButtonSwipe } from "@/components/atoms/button-swipe";
-import { GridImages } from "@/components/atoms/grid-images";
 import { Circle } from "@/components/molecules/list-itens/styles";
 import { mediaMaxWidth } from "@/utils/media-query";
 import { LazyImage } from "@/components/atoms/lazy-image";

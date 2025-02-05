@@ -1,6 +1,5 @@
 import { FacebookIcon } from "@/components/svgs/facebook";
 import { InstagramIcon } from "@/components/svgs/instagram";
-import { TwitterIcon } from "@/components/svgs/twitter";
 
 export default {
   data: {

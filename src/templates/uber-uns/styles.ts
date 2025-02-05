@@ -3,12 +3,8 @@ import { Header as _Header } from "@/components/organisms/header";
 import { Img as _Img } from "@/components/organisms/header/styles";
 import { Philosophie as _Philosophie } from "@/components/organisms/philosophie";
 import { Computer, Container, Img, Title } from "@/components/organisms/philosophie/styles";
-import { Offer as _Offer } from "@/components/organisms/offer";
 import { Cta as _Cta } from "@/components/organisms/cta";
 import { mediaMaxWidth } from "@/utils/media-query";
-import { Benefits as _Benefits } from "@/components/organisms/benefits-unternehmen";
-import { Accounting as _Accounting } from "@/components/atoms/accounting";
-import { Account as _Account } from "@/components/organisms/account";
 import { Office as _Office } from "@/components/organisms/office";
 import { FaceBehind as _FaceBehind } from "@/components/organisms/face-behind";
 

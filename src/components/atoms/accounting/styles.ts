@@ -170,7 +170,7 @@ export const Item = styled.li<{ $active?: boolean }>`
       }
     `}
 
-  ${({ $active }) => mediaMaxWidth("mobile")`
+  ${mediaMaxWidth("mobile")`
     padding: 2.7rem 0;
   `}
 `;

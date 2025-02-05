@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { Logo as _Logo } from "@/components/atoms/logo";
 import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
 import { mediaMaxWidth } from "@/utils/media-query";
-import { Mail as _Mail } from "@/components/svgs/mail";
-import { Phone as _Phone } from "@/components/svgs/phone";
 import { ArrowUpIcon } from "@/components/svgs/arrow-up";
 
 export const ButtonUp = styled.button`
