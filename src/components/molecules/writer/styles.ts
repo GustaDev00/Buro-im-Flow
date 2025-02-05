@@ -6,10 +6,10 @@ export const WriterContainer = styled.section`
   display: flex;
   margin-bottom: 3rem;
   gap: 4rem;
-  color: white;
+  color: #000;
 
   svg path {
-    stroke: white;
+    stroke: #000;
   }
 
   ${mediaMaxWidth("mobile")`

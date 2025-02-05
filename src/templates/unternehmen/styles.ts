@@ -20,10 +20,10 @@ export const Philosophie = styled(_Philosophie)`
   ${Computer} {
     picture:first-child {
       ${Img} {
-        height: 66.3rem;
+        height: 56.3rem;
 
         ${mediaMaxWidth("mobile")`
-          height: 46.5rem; 
+          height: 36.5rem; 
           margin-top: 12rem;
         `}
       }
@@ -33,10 +33,10 @@ export const Philosophie = styled(_Philosophie)`
       ${Img} {
         margin-top: 2.1rem;
         border-radius: 15.35rem;
-        height: 36rem;
+        height: 26rem;
 
         ${mediaMaxWidth("mobile")`
-          height: 20.7rem;
+          height: 15.7rem;
         `}
       }
     }

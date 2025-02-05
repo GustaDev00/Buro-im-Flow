@@ -23,7 +23,6 @@ export default () => {
       const chart = sectionRef.current.querySelector("[data-fs-animation='chart']");
       const title = sectionRef.current.querySelector("[data-fs-animation='title']");
       const text = sectionRef.current.querySelector("[data-fs-animation='text']");
-      const button1 = sectionRef.current.querySelector("[data-fs-animation='button1']");
       const button2 = sectionRef.current.querySelector("[data-fs-animation='button2']");
 
       if (chart) {

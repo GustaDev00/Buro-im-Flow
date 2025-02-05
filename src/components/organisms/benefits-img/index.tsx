@@ -180,17 +180,27 @@ export const Benefits = () => {
     <S.Benefits ref={sectionRef}>
       <S.Wrapper>
         <S.Content>
-          <S.Title>
+          <S.Title data-fs-animation="title">
             Entdecken Sie einige der
             <CustomBr byViewport="desktop" /> Vorteile meines Services
           </S.Title>
-          <S.List items={list} />
+          <S.List items={list} data-fs-animation="item" />
         </S.Content>
         <S.Container>
-          <S.ImageSmall src="/imgs/privatkunden/benefits/2.png" alt="benefits" />
-          <S.ImageBig src="/imgs/privatkunden/benefits/1.png" alt="benefits" />
+          <S.ImageSmall
+            src="/imgs/privatkunden/benefits/2.png"
+            alt="benefits"
+            data-fs-animation="image"
+          />
+          <S.ImageBig
+            src="/imgs/privatkunden/benefits/1.png"
+            alt="benefits"
+            data-fs-animation="image"
+          />
 
-          <S.Button href="/kontakt">Jetzt Beratung buchen</S.Button>
+          <S.Button href="/kontakt" data-fs-animation="button">
+            Jetzt Beratung buchen
+          </S.Button>
         </S.Container>
       </S.Wrapper>
     </S.Benefits>

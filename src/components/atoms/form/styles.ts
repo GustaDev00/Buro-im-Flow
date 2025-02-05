@@ -201,7 +201,14 @@ export const Item = styled.li`
   letter-spacing: -0.1113rem;
 `;
 
-export const Link = styled.a``;
+export const Link = styled.a`
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-left: 1rem;
+  }
+`;
 
 export const Span = styled.span`
   font-weight: 300;
@@ -215,8 +222,8 @@ export const ModalContent = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 0.8rem;
-  border: 0.1rem solid ${({ theme }) => theme.platinum};
-  background: ${({ theme }) => theme.white};
+  border: 0.1rem solid ${({ theme }) => theme.black};
+  background: ${({ theme }) => theme.black};
   width: 44.5rem;
   box-shadow: 0rem 0rem 0.2rem 0rem ${({ theme }) => theme.black012},
     0rem 2rem 2rem 0rem ${({ theme }) => theme.black008};

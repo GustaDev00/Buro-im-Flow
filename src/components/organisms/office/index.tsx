@@ -8,8 +8,12 @@ export const Office = () => {
     <S.Office ref={sectionRef}>
       <S.Wrapper>
         <S.Columns>
-          <S.ImageTop src="/imgs/home/office/top1.png" alt="Top 1" />
-          <S.ImageRectangle src="/imgs/home/office/rectangle.png" alt="Rectangle" />
+          <S.ImageTop data-fs-animation="image-top" src="/imgs/home/office/top1.png" alt="Top 1" />
+          <S.ImageRectangle
+            data-fs-animation="image-rectangle"
+            src="/imgs/home/office/rectangle.png"
+            alt="Rectangle"
+          />
         </S.Columns>
 
         <S.Content>
@@ -27,8 +31,16 @@ export const Office = () => {
         </S.Content>
 
         <S.Columns>
-          <S.ImageTop2 src="/imgs/home/office/top2.png" alt="Top 2" />
-          <S.ImageCircle src="/imgs/home/office/circle.png" alt="Circle" />
+          <S.ImageTop2
+            data-fs-animation="image-top2"
+            src="/imgs/home/office/top2.png"
+            alt="Top 2"
+          />
+          <S.ImageCircle
+            data-fs-animation="image-circle"
+            src="/imgs/home/office/circle.png"
+            alt="Circle"
+          />
         </S.Columns>
       </S.Wrapper>
     </S.Office>

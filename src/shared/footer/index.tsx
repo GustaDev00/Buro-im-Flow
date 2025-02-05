@@ -170,14 +170,20 @@ export const Footer = () => {
                   <S.Link {...link}>{link.title}</S.Link>
                 </S.Item>
               ))}
+
+              <S.Item>
+                <S.Link href="/impressum">Impressum</S.Link>
+              </S.Item>
+
+              <S.Item>
+                <S.Link href="/datenschutz">Datenschutz</S.Link>
+              </S.Item>
             </S.List>
           </S.Column>
           <S.Column>
             <S.TitleLine>Kontakt</S.TitleLine>
 
             <S.List>
-              <S.Item>{/* <S.Link href={item.link}>{item.content}</S.Link> */}</S.Item>
-
               <S.Item>
                 <S.Link href={C.data.contact[0].link}>
                   <svg

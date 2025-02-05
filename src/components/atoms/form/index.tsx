@@ -6,6 +6,7 @@ import { SendMailRequest } from "@/api/send-mail/request";
 import { useFormik } from "formik";
 import { useState } from "react";
 import useAnimation from "./animation";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const Form = () => {
   const { sectionRef } = useAnimation();
@@ -150,11 +151,12 @@ export const Form = () => {
               <S.List $line={true} data-timeline={`list-phones`}>
                 <S.Item data-timeline={`list-item-phone`}>
                   <S.Link
-                    href="tel:+41799346783"
+                    href="https://web.whatsapp.com/send?phone=+41%2079%20934%2067%2083"
                     title="Phone: +41 79 934 67 83"
                     data-timeline={`phone-link`}
                   >
-                    Phone: <S.Span data-timeline={`phone-content`}>+41 79 934 67 83</S.Span>
+                    Phone: <S.Span data-timeline={`phone-content`}> +41 79 934 67 83</S.Span>
+                    <FaWhatsapp />
                   </S.Link>
                 </S.Item>
               </S.List>

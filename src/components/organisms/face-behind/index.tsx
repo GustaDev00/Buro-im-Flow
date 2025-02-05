@@ -8,8 +8,12 @@ export const FaceBehind = () => {
   return (
     <S.FaceBehind ref={sectionRef}>
       <S.Bg>
-        <S.Image src="/imgs/uber-uns/face-behind/bg.png" alt="face behind" />
-        <S.Title>
+        <S.Image
+          src="/imgs/uber-uns/face-behind/bg.png"
+          alt="face behind"
+          data-fs-animation="image"
+        />
+        <S.Title data-fs-animation="title">
           Das
           <CustomBr byViewport="mobile" /> Gesicht
           <CustomBr byViewport="mobile" /> hinter
@@ -20,7 +24,7 @@ export const FaceBehind = () => {
 
       <S.Wrapper>
         <S.Container>
-          <S.Content>
+          <S.Content data-fs-animation="content">
             Hallo, ich bin <strong>Larissa Wechsler</strong>, Geschäftsinhaberin von Büro im Flow
             und Ihre Partnerin für alle Treuhand-Dienstleistungen. Mit jahrelanger Erfahrung und
             einem klaren Fokus auf Effizienz und Präzision unterstütze ich KMUs,
@@ -49,7 +53,11 @@ export const FaceBehind = () => {
                 </S.BusinessOwner>
                 <S.Name>Larissa Wechsler</S.Name>
               </S.Info>
-              <S.ImageUser src="/imgs/uber-uns/face-behind/lari.png" alt="Larissa Wechsler" />
+              <S.ImageUser
+                src="/imgs/uber-uns/face-behind/lari.png"
+                alt="Larissa Wechsler"
+                data-fs-animation="image"
+              />
             </S.Data>
             <S.Card>
               <S.Qualifications>

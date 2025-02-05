@@ -35,11 +35,11 @@ export default {
     imgs: [
       {
         alt: "Image",
-        src: "/imgs/privatkunden/philosophie/img1.png",
+        src: "/imgs/unternehmen/philosophie/img1.png",
       },
       {
         alt: "Image",
-        src: "/imgs/privatkunden/philosophie/img2.png",
+        src: "/imgs/unternehmen/philosophie/img2.png",
       },
     ],
     link: {

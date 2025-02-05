@@ -2,9 +2,9 @@ import { FC } from "react";
 import type { CardServicesProps } from "./props";
 import * as S from "./styles";
 
-export const CardServices: FC<CardServicesProps> = ({ subtitle, text, link, bg }) => {
+export const CardServices: FC<CardServicesProps> = ({ subtitle, text, link, bg, ...props }) => {
   return (
-    <S.CardServices>
+    <S.CardServices {...props}>
       <S.Image {...bg} />
       <S.Wrapper>
         <S.Effects>

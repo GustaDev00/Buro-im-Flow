@@ -2,9 +2,9 @@ import * as S from "./styles";
 import { CustomBr } from "../custom-br";
 import { ResponsiveElement } from "@/utils/responsive-element";
 
-export const GridImages = () => {
+export const GridImages = ({ ...props }) => {
   return (
-    <S.GridImages>
+    <S.GridImages {...props}>
       <S.Wrapper>
         <S.ImgLarge src="/imgs/home/benefits/grid/large.png" alt="imagem 01" />
       </S.Wrapper>

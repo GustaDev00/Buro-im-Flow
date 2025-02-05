@@ -7,7 +7,6 @@ import { StyledComponentsRegistry } from "@/lib/registry";
 import { theme } from "@/styles/theme";
 import { GlobalStyles } from "@/styles/global";
 import { GSAPInitializer } from "@/components/atoms/gsap-initializer";
-import Nav from "@/shared/nav";
 import { Footer } from "@/shared/footer";
 import { Loading } from "@/components/atoms/loading";
 
@@ -24,7 +23,6 @@ const RootLayout = ({
             <GlobalStyles />
             <GSAPInitializer />
             <Loading />
-            <Nav />
             <main>
               <Suspense>{children}</Suspense>
             </main>

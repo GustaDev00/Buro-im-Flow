@@ -11,10 +11,10 @@ export const Technology = ({ title, description, img, link, ...props }: Technolo
         <S.Container>
           <S.Group>
             <S.Title data-fs-animation="title">{title}</S.Title>
-            <S.Description data-fs-animation="description">{description}</S.Description>{" "}
+            <S.Description data-fs-animation="description">{description}</S.Description>
             <S.Shapes>
-              <S.Line></S.Line>
-              <S.Circle></S.Circle>
+              <S.Line data-fs-animation="line"></S.Line>
+              <S.Circle data-fs-animation="circle"></S.Circle>
             </S.Shapes>
             <S.Link data-fs-animation="link" href={link}>
               Jetzt Beratung buchen

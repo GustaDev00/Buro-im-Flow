@@ -40,23 +40,8 @@ export const Offer = () => {
   return (
     <S.Offer ref={sectionRef}>
       <S.Wrapper>
-        <S.Title>Was ich anbieten</S.Title>
+        <S.Title data-fs-animation="title">Was ich anbieten</S.Title>
         <S.Container>
-          {/* <S.Content>
-            <S.Bg src="/imgs/privatkunden/offer/card.png" alt="offer-bg" />
-            <S.Info>
-              <S.Subtitle>Steuern</S.Subtitle>
-              <S.Text>
-                Steuern müssen nicht kompliziert sein. Die Steuererklärung wird vollständig
-                übernommen – von der Erfassung aller notwendigen Unterlagen bis zur fristgerechten
-                Einreichung. Dabei wird sichergestellt, dass alle Abzüge und steuerlichen Vorteile
-                berücksichtigt werden. Langfristige Strategien zur Steueroptimierung schaffen
-                zusätzliche Entlastung, damit keine Möglichkeit ungenutzt bleibt.
-              </S.Text>
-              <S.button href="#">Beratung buchen</S.button>
-            </S.Info>
-          </S.Content> */}
-
           <ResponsiveElement
             breakpoints={{
               isMobileOrTabletVertical: (
@@ -66,12 +51,15 @@ export const Offer = () => {
                       key={index}
                       $active={active === index}
                       onClick={() => setActive(index)}
+                      data-fs-animation="item"
                     >
                       <S.Bg src={`/imgs/privatkunden/offer/card-${index + 1}.png`} alt="offer-bg" />
                       <S.Info>
                         <S.Subtitle>{title}</S.Subtitle>
                         <S.Text>{description}</S.Text>
-                        <S.button href="#">{button}</S.button>
+                        <S.button href="#" data-fs-animation="button">
+                          {button}
+                        </S.button>
                       </S.Info>
                     </S.Content>
                   ))}
@@ -79,39 +67,23 @@ export const Offer = () => {
               ),
             }}
             content={services.map(({ title, description, button }, index) => (
-              <S.Content key={index} $active={active === index} onClick={() => setActive(index)}>
+              <S.Content
+                key={index}
+                $active={active === index}
+                onClick={() => setActive(index)}
+                data-fs-animation="item"
+              >
                 <S.Bg src={`/imgs/privatkunden/offer/card-${index + 1}.png`} alt="offer-bg" />
                 <S.Info>
                   <S.Subtitle>{title}</S.Subtitle>
                   <S.Text>{description}</S.Text>
-                  <S.button href="#">{button}</S.button>
+                  <S.button href="#" data-fs-animation="button">
+                    {button}
+                  </S.button>
                 </S.Info>
               </S.Content>
             ))}
           />
-
-          {/* <ResponsiveElement
-            breakpoints={{
-              isMobileOrTabletVertical: (
-                <>
-                  {[1, 2, 3, 4].map((_, index) => (
-                    <S.Image
-                      key={index}
-                      src={`/imgs/privatkunden/offer/mobile/card-${index + 1}.png`}
-                      alt="offer"
-                    />
-                  ))}
-                </>
-              ),
-            }}
-            content={[1, 2, 3].map((_, index) => (
-              <S.Image
-                key={index}
-                src={`/imgs/privatkunden/offer/card-${index + 1}.png`}
-                alt="offer"
-              />
-            ))}
-          /> */}
         </S.Container>
       </S.Wrapper>
     </S.Offer>

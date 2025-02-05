@@ -12,13 +12,15 @@ export const Header = ({ title, description, img, link, ...props }: HeaderProps)
         <S.Description data-fs-animation="text">{description}</S.Description>
         {link && (
           <S.Container>
-            <S.CircleG data-fs-animation="circle">
-              <S.CircleM>
-                <S.CircleP>
-                  <S.Chart />
-                </S.CircleP>
-              </S.CircleM>
-            </S.CircleG>
+            <S.Circles>
+              <S.CircleG data-fs-animation="circle">
+                <S.CircleM>
+                  <S.CircleP>
+                    <S.Chart />
+                  </S.CircleP>
+                </S.CircleM>
+              </S.CircleG>
+            </S.Circles>
             <S.Link data-fs-animation="button" href={link}>
               Jetzt Beratung buchen
             </S.Link>

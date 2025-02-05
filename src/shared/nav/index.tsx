@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import * as S from "./styles";
 import C from "@/constants";
 
-export default () => {
+export default ({ isBlog }: { isBlog?: boolean }) => {
   const [open, setOpen] = useState(false);
   const { contact, navigation } = C.data;
 
@@ -11,7 +11,7 @@ export default () => {
   }, []);
 
   return (
-    <S.Header>
+    <S.Header $isBlog={isBlog}>
       <S.Wrapper>
         <S.Logo />
         <S.Nav>

@@ -1,17 +1,43 @@
 import { Logo as _Logo } from "@/components/atoms/logo";
 import { mediaMaxWidth } from "@/utils/media-query";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { FaPhone } from "react-icons/fa6";
 import { FiExternalLink } from "react-icons/fi";
 
-export const Header = styled.header`
+export const Logo = styled(_Logo)`
+  ${mediaMaxWidth("mobile")``}
+`;
+
+export const Header = styled.header<{ $isBlog?: boolean }>`
   position: absolute;
-  top: 6.4rem;
+  padding-top: 6.4rem;
   width: 100%;
   z-index: 10;
 
+  ${({ $isBlog }) =>
+    $isBlog &&
+    css`
+      position: relative;
+      padding-top: 2.4rem;
+      padding-bottom: 2.4rem;
+      background: #405e20;
+
+      ${Logo} {
+        width: fit-content;
+        height: 8rem;
+      }
+
+      ${mediaMaxWidth("mobile")`
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+
+        ${Logo} {
+          height: 6rem;
+      `}
+    `}
+
   ${mediaMaxWidth("mobile")`
-    top: 0rem;
+    padding-top: 0rem;
   `}
 `;
 
@@ -29,12 +55,8 @@ export const Wrapper = styled.div`
   `}
 
   ${mediaMaxWidth("mobile")`
-  padding-top: 4.4rem;
+  padding-top: 1.8rem;
 `}
-`;
-
-export const Logo = styled(_Logo)`
-  ${mediaMaxWidth("mobile")``}
 `;
 
 export const Nav = styled.ul`
@@ -183,7 +205,9 @@ export const WrapperModal = styled.div`
   font-weight: 700;
 
   ${mediaMaxWidth("mobile")`
-    padding: 2rem 2.2rem;
+    padding: 5.4rem 2.2rem 2rem;
+    justify-content: flex-start;
+    gap: 7.4rem;
   `}
 `;
 
@@ -203,6 +227,11 @@ export const TextMenu = styled.p`
   font-size: 6.8rem;
   font-weight: 700;
   line-height: 9.2rem;
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 4.8rem;
+    line-height: 6.8rem;
+  `}
 `;
 
 export const ButtonClose = styled(Menu)`
@@ -238,6 +267,10 @@ export const ButtonClose = styled(Menu)`
   &:after {
     transform: rotate(-45deg);
   }
+
+  ${mediaMaxWidth("mobile")`
+    margin-bottom: 7rem;
+  `}
 `;
 
 export const MainModal = styled.main`
@@ -254,7 +287,7 @@ export const MainModal = styled.main`
   }
 
   ${mediaMaxWidth("mobile")`
-    margin-top: 6.4rem;
+    margin-top: 0rem;
   `}
 `;
 
@@ -263,6 +296,10 @@ export const List = styled.nav`
   flex-direction: column;
   align-items: flex-end;
   gap: 2.5rem;
+
+  ${mediaMaxWidth("mobile")`
+    gap: 1rem;
+  `}
 `;
 
 export const Item = styled.a`
@@ -295,7 +332,7 @@ export const Item = styled.a`
   }
 
   ${mediaMaxWidth("mobile")`
-    font-size: 3.6rem;
+    font-size: 2.8rem;
   `}
 `;
 
@@ -316,6 +353,16 @@ export const FooterModal = styled.footer`
     height: 0.1rem;
     background: rgba(255, 255, 255, 0.1);
   }
+
+  ${mediaMaxWidth("mobile")`
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    &::after {
+      left: 0;
+    }
+  `}
 `;
 
 export const Social = styled.p`

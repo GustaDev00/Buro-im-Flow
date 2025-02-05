@@ -66,7 +66,7 @@ export default {
     cta: {
       title: "Kontakt aufnehmen",
       text: "Noch Fragen? Kontaktieren Sie uns noch heute.",
-      href: "https://web.whatsapp.com/send?phone=+41%2076%20539%2087%2050",
+      href: "/kontakt",
     },
   },
 };

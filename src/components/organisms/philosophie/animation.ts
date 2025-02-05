@@ -1,8 +1,5 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -10,6 +7,7 @@ export default () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       if (!sectionRef.current) return;
+
       const isMobile = window.innerWidth <= 768;
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -21,9 +19,13 @@ export default () => {
           id: "philosophie-animation",
         },
       });
-      const title = sectionRef.current.querySelector("[data-fs-animation='title']");
-      const items = sectionRef.current.querySelectorAll("[data-fs-animation='item']");
 
+      const title = sectionRef.current.querySelector("[data-fs-animation='title']");
+      const description = sectionRef.current.querySelector("[data-fs-animation='description']");
+      const link = sectionRef.current.querySelector("[data-fs-animation='link']");
+      const imgs = sectionRef.current.querySelectorAll("[data-fs-animation='item']");
+
+      // Title animation
       if (title) {
         tl.from(title, {
           y: 100,
@@ -32,7 +34,29 @@ export default () => {
           rotate: 15,
         });
       }
-      tl.from(items, {
+
+      // Description animation
+      if (description) {
+        tl.from(description, {
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+          ease: "power4.out",
+        });
+      }
+
+      // Link animation
+      if (link) {
+        tl.from(link, {
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+          ease: "power4.out",
+        });
+      }
+
+      // Item (images) animation
+      tl.from(imgs, {
         opacity: 0,
         y: 50,
         duration: 0.8,

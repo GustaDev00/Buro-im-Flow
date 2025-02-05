@@ -93,7 +93,17 @@ export const Container = styled.div`
 `}
 `;
 
+export const Circles = styled.div`
+  position: relative;
+  width: 9.3rem;
+  height: 9.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const CircleG = styled.div`
+  position: absolute;
   background-color: #ffffff26;
   border-radius: 100px;
   width: 9.3rem;
@@ -101,9 +111,23 @@ export const CircleG = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
+  animation: growShrinkG 4s infinite ease;
+
+  @keyframes growShrinkG {
+    0%,
+    100% {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+    50% {
+      width: 9.3rem;
+      height: 9.3rem;
+    }
+  }
 `;
 
 export const CircleM = styled.div`
+  position: absolute;
   background-color: #ffffff0d;
   border-radius: 100px;
   width: 6.5rem;
@@ -111,6 +135,19 @@ export const CircleM = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
+  animation: growShrinkM 4s infinite ease;
+
+  @keyframes growShrinkM {
+    0%,
+    100% {
+      width: 4.5818rem;
+      height: 4.5818rem;
+    }
+    50% {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  }
 `;
 
 export const CircleP = styled.div`

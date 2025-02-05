@@ -121,15 +121,17 @@ export const Benefits = () => {
     <S.Benefits ref={sectionRef}>
       <S.Wrapper>
         <S.Content>
-          <S.Title>
+          <S.Title data-fs-animation="title">
             Entdecken Sie einige der
             <CustomBr byViewport="desktop" /> Vorteile meines Services
           </S.Title>
-          <S.List items={list} />
-          <S.Button href="/kontakt">Jetzt Beratung buchen</S.Button>
+          <S.List items={list} data-fs-animation="list-item" />
+          <S.Button href="/kontakt" data-fs-animation="button">
+            Jetzt Beratung buchen
+          </S.Button>
         </S.Content>
         <S.Container>
-          <S.Grid />
+          <S.Grid data-fs-animation="grid" />
         </S.Container>
       </S.Wrapper>
     </S.Benefits>

@@ -1,7 +1,7 @@
 export default {
-  title: "Unser Angebot",
+  title: "Mein Angebot",
   button: {
-    href: "/uber-uns",
-    title: "Gespräch starten",
+    href: "/kontakt",
+    title: "Jetzt Beratung buchen",
   },
 };

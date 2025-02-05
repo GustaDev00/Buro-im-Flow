@@ -53,7 +53,7 @@ export const Title = styled.h2`
 
 export const Button = styled(ButtonSwipe)`
   color: #fff;
-  background: #0d4d9b;
+  background: #405e20;
 
   svg path {
     fill: #fff;
@@ -182,5 +182,6 @@ export const Image = styled(LazyImage)`
 
   ${mediaMaxWidth("mobile")`
     width: 100%;
+    margin-top: 4rem;
   `}
 `;

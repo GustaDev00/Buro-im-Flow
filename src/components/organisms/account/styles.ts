@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
 import { ButtonSwipe } from "@/components/atoms/button-swipe";
+import { mediaMaxWidth } from "@/utils/media-query";
 
 export const Account = styled.div``;
 
@@ -19,12 +20,22 @@ export const Title = styled.h2`
   font-weight: 700;
   line-height: 7.8rem;
   margin-top: 7.6rem;
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+  `}
 `;
 
 export const Texts = styled.div`
   display: flex;
   margin: 6.6rem 0;
   gap: 5.3rem;
+
+  ${mediaMaxWidth("mobile")`
+    flex-direction: column;
+    gap: 3.8rem;
+  `}
 `;
 
 export const Text = styled.p`
@@ -41,6 +52,11 @@ export const Container = styled.div`
   display: flex;
   margin-top: 6.6rem;
   gap: 9.2rem;
+
+  ${mediaMaxWidth("mobile")`
+    flex-direction: column;
+    gap: 3rem;
+  `}
 `;
 
 export const Video = styled.div``;
@@ -52,12 +68,21 @@ export const Subtitle = styled.h3`
   line-height: 5rem;
   letter-spacing: -0.1417rem;
   margin-bottom: 6.9rem;
+
+  ${mediaMaxWidth("mobile")`
+    margin-bottom: 3.8rem;
+  `}
 `;
 
 export const Iframe = styled.iframe`
   width: 76.6637rem;
   height: 50.1rem;
   border-radius: 2.7rem;
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+    height: 29.6rem;
+  `}
 `;
 
 export const Card = styled.div`
@@ -68,6 +93,10 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4.7rem;
+
+  ${mediaMaxWidth("mobile")`
+    padding: 3.8rem 2.6rem;
+  `}
 `;
 
 export const CardTitle = styled.h4`
@@ -75,10 +104,17 @@ export const CardTitle = styled.h4`
   font-size: 3.4rem;
   font-weight: 700;
   line-height: 4.4rem;
+
+  ${mediaMaxWidth("mobile")`
+  `}
 `;
 
 export const CardList = styled.ul`
   width: 53.1rem;
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+  `}
 `;
 
 export const CardItem = styled.li`

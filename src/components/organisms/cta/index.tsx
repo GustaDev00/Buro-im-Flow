@@ -7,13 +7,15 @@ export const Cta = () => {
   return (
     <S.Cta ref={sectionRef}>
       <S.Wrapper>
-        <S.CircleG>
-          <S.CircleM>
-            <S.CircleP>
-              <S.Chart data-fs-animation="chart" />
-            </S.CircleP>
-          </S.CircleM>
-        </S.CircleG>
+        <S.Circles>
+          <S.CircleG>
+            <S.CircleM>
+              <S.CircleP>
+                <S.Chart data-fs-animation="chart" />
+              </S.CircleP>
+            </S.CircleM>
+          </S.CircleG>
+        </S.Circles>
 
         <S.Title data-fs-animation="title">Bereit den nächsten Schritt zu gehen?</S.Title>
 

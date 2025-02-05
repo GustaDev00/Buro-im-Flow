@@ -24,6 +24,8 @@ export default () => {
       const description = sectionRef.current.querySelector("[data-fs-animation='description']");
       const link = sectionRef.current.querySelector("[data-fs-animation='link']");
       const image = sectionRef.current.querySelector("[data-fs-animation='image']");
+      const line = sectionRef.current.querySelector("[data-fs-animation='line']");
+      const circle = sectionRef.current.querySelector("[data-fs-animation='circle']");
 
       if (title) {
         tl.from(title, {
@@ -52,6 +54,19 @@ export default () => {
         y: 50,
         opacity: 0,
         duration: 0.8,
+        ease: "power4.out",
+      });
+
+      tl.from(line, {
+        width: 0,
+        duration: 0.5,
+        ease: "power4.out",
+      });
+
+      tl.from(circle, {
+        opacity: 0,
+        scale: 0,
+        duration: 0.5,
         ease: "power4.out",
       });
     }, sectionRef);

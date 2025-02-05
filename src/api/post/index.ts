@@ -1,5 +1,5 @@
-import api from '..';
-import ListPostsResponse from './response';
+import api from "..";
+import ListPostsResponse from "./response";
 
 const Post = async (id: number) => {
   try {
