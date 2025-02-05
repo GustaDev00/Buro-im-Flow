@@ -11,8 +11,8 @@ export default {
     ),
     description: (
       <>
-        Steuererklärungen? Einfach hochladen. Beratung? Vor Ort
-        <CustomBr byViewport="desktop" /> oder online, klar verständlich.
+        Steuererklärungen? Einfach hochladen. Beratung?
+        <CustomBr byViewport="desktop" /> Vor Ort oder online, klar verständlich.
       </>
     ),
     img: {
@@ -66,7 +66,7 @@ export default {
       },
     ],
     link: {
-      href: "/uber-uns",
+      href: "/kontakt",
       title: "Jetzt Beratung buchen",
     },
   },
@@ -94,7 +94,7 @@ export default {
           </>
         ),
         link: {
-          href: "#",
+          href: "/kontakt",
           title: "Jetzt Beratung buchen",
         },
       },
@@ -114,7 +114,7 @@ export default {
           </>
         ),
         link: {
-          href: "#",
+          href: "/kontakt",
           title: "Jetzt Beratung buchen",
         },
       },

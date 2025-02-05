@@ -21,7 +21,7 @@ export const Office = () => {
             Tools und fundiertem Fachwissen profitieren Sie von weniger Stress, mehr Transparenz und
             Lösungen, die wirklich passen.
           </S.Text>
-          <S.Button data-fs-animation="button" href="#">
+          <S.Button data-fs-animation="button" href="/kontakt">
             Jetzt Beratung buchen
           </S.Button>
         </S.Content>

@@ -62,7 +62,7 @@ export default () => {
       }
 
       tl.from(
-        [button1, button2],
+        [button2],
         {
           y: 50,
           opacity: 0,

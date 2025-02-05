@@ -194,7 +194,7 @@ export default {
           </>
         ),
         link: {
-          href: "#",
+          href: "/kontakt",
           title: "Jetzt Beratung buchen",
         },
       },
@@ -214,7 +214,7 @@ export default {
           </>
         ),
         link: {
-          href: "#",
+          href: "/kontakt",
           title: "Jetzt Beratung buchen",
         },
       },

@@ -135,13 +135,15 @@ export const Footer = () => {
             <S.Line>
               <S.List>
                 <S.Item>
-                  Büro im Flow wird betrieben von Buchhaltung WECHSLER, in Gunzwil, Schweiz,
+                  Büro im Flow wird betrieben von Buchhaltung WECHSLER, in Gunzwil, Schweiz.
                   <CustomBr byViewport="desktop" />
-                  Treuhanddienstleistungen- und Finanzberatungsdienstleistungen spezialisiert hat.
+                  Sie ist spezialisiert in Treuhanddienstleistungen- und
+                  Finanzberatungsdienstleistungen.
                   <CustomBr byViewport="desktop" />
                   Gefördert von Larissa Wechsler, Fachfrau Finanz- und Rechnungswesen und
                   zertifizierte
-                  <CustomBr byViewport="desktop" /> Steuerspezialistin.
+                  <CustomBr byViewport="desktop" />
+                  Steuerspezialistin.
                 </S.Item>
 
                 <S.Item></S.Item>

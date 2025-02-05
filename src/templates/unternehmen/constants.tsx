@@ -16,35 +16,20 @@ export default {
     link: "/kontakt",
   },
   philosophie: {
-    title: (
-      <>
-        Meine
-        <CustomBr byViewport="mobile" /> Philosophie
-      </>
-    ),
+    title: <>Finanzklarheit für Ihr Unternehmen</>,
     description: (
       <>
-        Klare Finanzen sind das Fundament für erfolgreiche
-        <CustomBr byViewport="desktop" /> Unternehmen. Die Treuhandlösungen für KMUs setzen
-        <CustomBr byViewport="desktop" /> genau hier an: Prozesse werden effizient gestaltet,
+        Effiziente Treuhandlösungen sind die Basis für
+        <CustomBr byViewport="desktop" /> nachhaltigen Erfolg. Durch Automatisierung und
         <CustomBr byViewport="desktop" />
-        komplexe Aufgaben vereinfacht und Ergebnisse
-        <CustomBr byViewport="desktop" /> transparent gemacht.
+        Digitalisierung sparen Sie Zeit und Kosten,
+        <CustomBr byViewport="desktop" /> ohne auf persönliche Betreuung zu verzichten.
         <br />
         <br />
-        Automatisierung und Digitalisierung sparen wertvolle
-        <CustomBr byViewport="desktop" /> Zeit und Kosten – ohne dabei den persönlichen Kontakt
-        <CustomBr byViewport="desktop" /> zu verlieren. Jedes Unternehmen ist einzigartig, deshalb
+        Massgeschneiderte Lösungen sorgen für klare
+        <CustomBr byViewport="desktop" /> Prozesse und Transparenz – damit Sie sich voll und ganz
         <CustomBr byViewport="desktop" />
-        sind die Lösungen individuell auf die jeweiligen
-        <CustomBr byViewport="desktop" /> Bedürfnisse zugeschnitten.
-        <br />
-        <br />
-        Das Ziel? Ihrem Unternehmen den Rücken freizuhalten,
-        <CustomBr byViewport="desktop" /> damit Sie sich auf das Wachstum und Ihre Kernaufgaben
-        <CustomBr byViewport="desktop" />
-        konzentrieren können – mit Treuhand, die Vertrauen
-        <CustomBr byViewport="desktop" /> schafft und Effizienz lebt.
+        auf Ihr Wachstum konzentrieren können.
       </>
     ),
     imgs: [
@@ -58,7 +43,7 @@ export default {
       },
     ],
     link: {
-      href: "/uber-uns",
+      href: "/kontakt",
       title: "Jetzt Beratung buchen",
     },
   },
@@ -187,7 +172,7 @@ export default {
           </>
         ),
         link: {
-          href: "#",
+          href: "/kontakt",
           title: "Jetzt Beratung buchen",
         },
       },
@@ -207,7 +192,7 @@ export default {
           </>
         ),
         link: {
-          href: "#",
+          href: "/kontakt",
           title: "Jetzt Beratung buchen",
         },
       },

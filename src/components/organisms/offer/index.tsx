@@ -40,7 +40,7 @@ export const Offer = () => {
   return (
     <S.Offer ref={sectionRef}>
       <S.Wrapper>
-        <S.Title>was ich anbieten</S.Title>
+        <S.Title>Was ich anbieten</S.Title>
         <S.Container>
           {/* <S.Content>
             <S.Bg src="/imgs/privatkunden/offer/card.png" alt="offer-bg" />

@@ -56,7 +56,7 @@ export const Account = () => {
               <S.CardItem>Jederzeit digitaler Zugriff auf alle Belege mit Volltextsuche</S.CardItem>
               <S.CardItem>Effizienzsteigerung und weniger Verwaltungsaufwand</S.CardItem>
             </S.CardList>
-            <S.Button href="#">Jetzt Beratung buchen</S.Button>
+            <S.Button href="/kontakt">Jetzt Beratung buchen</S.Button>
           </S.Card>
         </S.Container>
       </S.Wrapper>

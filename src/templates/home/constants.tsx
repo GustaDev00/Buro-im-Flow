@@ -51,7 +51,7 @@ export default {
     title: (
       <>
         Für mich ist digital kein Ersatz,
-        <CustomBr byViewport="desktop" /> sondern eine Ergänzung
+        <CustomBr byViewport="desktop" /> sondern eine Ergänzung.
       </>
     ),
     description: (
@@ -94,7 +94,7 @@ export default {
           </>
         ),
         link: {
-          href: "#",
+          href: "/kontakt",
           title: "Jetzt Beratung buchen",
         },
       },
@@ -114,7 +114,7 @@ export default {
           </>
         ),
         link: {
-          href: "#",
+          href: "/kontakt",
           title: "Jetzt Beratung buchen",
         },
       },

@@ -49,7 +49,7 @@ export const Benefits = () => {
       title: <>Zeit- und Kostenersparnis</>,
       description: (
         <>
-          Eine schlanke Geschäftsstruktur und moderne Tools Tools reduzieren den
+          Eine schlanke Geschäftsstruktur und moderne Tools reduzieren den
           <CustomBr byViewport="desktop" /> Aufwand erheblich – sowohl für die Treuhand als auch für
           die Kunden. Das
           <CustomBr byViewport="desktop" /> bedeutet weniger Arbeitszeit und somit geringere Kosten,
@@ -190,7 +190,7 @@ export const Benefits = () => {
           <S.ImageSmall src="/imgs/privatkunden/benefits/2.png" alt="benefits" />
           <S.ImageBig src="/imgs/privatkunden/benefits/1.png" alt="benefits" />
 
-          <S.Button href="#">Jetzt Beratung buchenn</S.Button>
+          <S.Button href="/kontakt">Jetzt Beratung buchen</S.Button>
         </S.Container>
       </S.Wrapper>
     </S.Benefits>

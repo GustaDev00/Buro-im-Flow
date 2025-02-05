@@ -12,7 +12,7 @@ export default {
         ),
         fiber: (
           <>
-            Mit 💚 entwickelt von <a href="https://www.fiberweb.ch/">FiberWeb.ch</a>
+            Mit 💚 entwickelt von <a href="https://www.fiberweb.ch/">FiberWeb</a>
           </>
         ),
       },
@@ -49,5 +49,24 @@ export default {
         icon: FacebookIcon,
       },
     ],
+  },
+  blog: {
+    home: {
+      title: "Blog Fiberweb",
+      description: <>Creative Webseiten Effektives Marketing Smarte KI Lösungen</>,
+    },
+    copy: {
+      copy: "Link kopieren",
+      copied: "Link kopiert",
+    },
+    time: "Leseminuten",
+    latest: {
+      title: "Neueste Artikel",
+    },
+    cta: {
+      title: "Kontakt aufnehmen",
+      text: "Noch Fragen? Kontaktieren Sie uns noch heute.",
+      href: "https://web.whatsapp.com/send?phone=+41%2076%20539%2087%2050",
+    },
   },
 };

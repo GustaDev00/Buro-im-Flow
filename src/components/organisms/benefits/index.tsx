@@ -126,7 +126,7 @@ export const Benefits = () => {
             <CustomBr byViewport="desktop" /> Vorteile meines Services
           </S.Title>
           <S.List items={list} />
-          <S.Button href="#">Jetzt Beratung buchenn</S.Button>
+          <S.Button href="/kontakt">Jetzt Beratung buchen</S.Button>
         </S.Content>
         <S.Container>
           <S.Grid />
