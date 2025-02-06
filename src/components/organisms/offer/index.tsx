@@ -66,7 +66,7 @@ export const Offer = () => {
                 </>
               ),
             }}
-            content={services.map(({ title, description, button }, index) => (
+            content={services.map(({ title, description }, index) => (
               <S.Content
                 key={index}
                 $active={active === index}
