@@ -46,7 +46,7 @@ export const Offer = () => {
             breakpoints={{
               isMobileOrTabletVertical: (
                 <>
-                  {services.map(({ title, description, button }, index) => (
+                  {services.map(({ title, description }, index) => (
                     <S.Content
                       key={index}
                       $active={active === index}
