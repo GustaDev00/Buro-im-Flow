@@ -2,7 +2,7 @@ import * as S from "./styles";
 import useAnimation from "./animation";
 import { CustomBr } from "@/components/atoms/custom-br";
 
-export const Benefits = () => {
+export const Benefits = ({ ...props }) => {
   const list = [
     {
       title: <>Digitale Prozesse</>,
@@ -118,7 +118,7 @@ export const Benefits = () => {
   const { sectionRef } = useAnimation();
 
   return (
-    <S.Benefits ref={sectionRef}>
+    <S.Benefits ref={sectionRef} {...props}>
       <S.Wrapper>
         <S.Content>
           <S.Title data-fs-animation="title">
@@ -126,9 +126,6 @@ export const Benefits = () => {
             <CustomBr byViewport="desktop" /> Vorteile meines Services
           </S.Title>
           <S.List items={list} data-fs-animation="list-item" />
-          <S.Button href="/kontakt" data-fs-animation="button">
-            Jetzt Beratung buchen
-          </S.Button>
         </S.Content>
         <S.Container>
           <S.Grid data-fs-animation="grid" />

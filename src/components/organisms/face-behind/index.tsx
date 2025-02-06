@@ -8,11 +8,7 @@ export const FaceBehind = () => {
   return (
     <S.FaceBehind ref={sectionRef}>
       <S.Bg>
-        <S.Image
-          src="/imgs/uber-uns/face-behind/bg.png"
-          alt="face behind"
-          data-fs-animation="image"
-        />
+        <S.Image src="/imgs/uber-uns/face-behind/bg.png" alt="face behind" />
         <S.Title data-fs-animation="title">
           Das
           <CustomBr byViewport="mobile" /> Gesicht

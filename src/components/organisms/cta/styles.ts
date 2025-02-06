@@ -144,18 +144,15 @@ export const Container = styled.div`
   `}
 `;
 
-export const Button1 = styled(ButtonSwipe)`
-  color: #242222;
-
-  ${mediaMaxWidth("mobile")`
-    width: 100%;
-    justify-content: center;
-  `}
-`;
-
 export const Button2 = styled(ButtonSwipe)`
   background: transparent;
   color: #fff;
+  transition: background 0.3s, color 0.3s;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
 
   ${mediaMaxWidth("mobile")`
     width: 100%;

@@ -95,6 +95,12 @@ export const Text = styled.p`
 export const button = styled(ButtonSwipe)`
   background: transparent;
   color: #fff;
+  transition: background 0.3s, color 0.3s;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
 `;
 
 export const Content = styled.div<{ $active?: boolean }>`

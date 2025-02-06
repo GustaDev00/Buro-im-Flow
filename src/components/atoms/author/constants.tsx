@@ -1,8 +1,8 @@
 export default {
   img: {
-    src: "/svgs/user.svg",
+    src: "/imgs/larissa.png",
     alt: "Image of the author",
     title: "Image of the author",
   },
-  name: "Liridon Mustafa",
+  name: "Larissa Wechsler",
 };

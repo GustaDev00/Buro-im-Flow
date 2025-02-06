@@ -186,7 +186,7 @@ export const Benefits = () => {
           <S.ImageSmall src="/imgs/privatkunden/benefits/2.png" alt="benefits" />
           <S.ImageBig src="/imgs/unternehmen/benefits/1.png" alt="benefits" />
 
-          <S.Button href="#">Jetzt Beratung buchenn</S.Button>
+          <S.Button href="#">Jetzt Beratung buchen</S.Button>
         </S.Container>
       </S.Wrapper>
     </S.Benefits>

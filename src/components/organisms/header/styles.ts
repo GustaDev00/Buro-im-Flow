@@ -78,7 +78,12 @@ export const Description = styled.p`
 `;
 
 export const Link = styled(ButtonSwipe)`
-  ${mediaMaxWidth("mobile")``}
+  transition: color 0.4s ease, background 0.4s ease;
+  &:hover {
+    box-shadow: 0 1.2rem 2rem 0 rgba(46, 84, 6, 0.15);
+    background: #405d20;
+    color: #fff;
+  }
 `;
 
 export const Container = styled.div`

@@ -17,7 +17,7 @@ export const Technology = ({ title, description, img, link, ...props }: Technolo
               <S.Circle data-fs-animation="circle"></S.Circle>
             </S.Shapes>
             <S.Link data-fs-animation="link" href={link}>
-              Jetzt Beratung buchen
+              Mehr erfahren
             </S.Link>
           </S.Group>
           <S.Computer>

@@ -57,8 +57,8 @@ export const Offer = () => {
                       <S.Info>
                         <S.Subtitle>{title}</S.Subtitle>
                         <S.Text>{description}</S.Text>
-                        <S.button href="#" data-fs-animation="button">
-                          {button}
+                        <S.button href="/kontakt" data-fs-animation="button">
+                          Jetzt Beratung buchen
                         </S.button>
                       </S.Info>
                     </S.Content>
@@ -77,8 +77,8 @@ export const Offer = () => {
                 <S.Info>
                   <S.Subtitle>{title}</S.Subtitle>
                   <S.Text>{description}</S.Text>
-                  <S.button href="#" data-fs-animation="button">
-                    {button}
+                  <S.button href="/kontakt" data-fs-animation="button">
+                    Jetzt Beratung buchen
                   </S.button>
                 </S.Info>
               </S.Content>

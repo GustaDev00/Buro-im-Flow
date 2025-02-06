@@ -10,7 +10,7 @@ export const Author = styled.div`
 export const AuthorImage = styled(LazyImage)`
   width: 4rem;
   height: 4rem;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 50%;
 `;
 

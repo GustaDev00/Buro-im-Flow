@@ -68,7 +68,7 @@ export default {
       alt: "Image",
       src: "/imgs/home/technology/computer.png",
     },
-    link: "#",
+    link: "/uber-uns",
   },
   solutions: {
     title: (
@@ -94,8 +94,8 @@ export default {
           </>
         ),
         link: {
-          href: "/kontakt",
-          title: "Jetzt Beratung buchen",
+          href: "/privatkunden",
+          title: "Mehr erfahren",
         },
       },
       {
@@ -114,8 +114,8 @@ export default {
           </>
         ),
         link: {
-          href: "/kontakt",
-          title: "Jetzt Beratung buchen",
+          href: "/unternehmen",
+          title: "Mehr erfahren",
         },
       },
     ],

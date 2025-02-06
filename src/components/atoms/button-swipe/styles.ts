@@ -21,7 +21,7 @@ const swipeStyles = css`
   svg {
     width: 3.1852rem;
     height: 3.1852rem;
-    transform: translateX(-0.5rem);
+    transform: translateX(-1rem);
     transition: transform 0.4s ease;
   }
 
@@ -29,7 +29,7 @@ const swipeStyles = css`
     box-shadow: 0rem 1.2rem 1.6rem 0rem ${({ theme }) => theme.black01};
 
     svg {
-      transform: translateX(0);
+      transform: translateX(0) rotate(45deg);
     }
   }
 
