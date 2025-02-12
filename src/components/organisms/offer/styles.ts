@@ -103,6 +103,16 @@ export const button = styled(ButtonSwipe)`
   }
 `;
 
+export const Bg = styled(LazyImage)`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 1s ease;
+`;
+
 export const Content = styled.div<{ $active?: boolean }>`
   cursor: pointer;
   display: flex;
@@ -115,7 +125,9 @@ export const Content = styled.div<{ $active?: boolean }>`
   background: #000;
 
   &:hover {
-    opacity: 0.9 !important;
+    ${Bg} {
+      filter: blur(0.3rem) brightness(0.5);
+    }
   }
 
   ${({ $active }) =>
@@ -142,15 +154,6 @@ ${({ $active }) => mediaMaxWidth("mobile")`
     overflow: hidden;
     transition: height 0.3s ease;
   `}
-`;
-
-export const Bg = styled(LazyImage)`
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 `;
 
 export const Image = styled(LazyImage)`
