@@ -9,8 +9,6 @@ import { LatestArticles } from "@/components/organisms/latest-articles";
 import Nav from "@/shared/nav";
 
 const BlogContent: FC<BlogContentProps> = ({ post, posts }) => {
-  // console.log(post, posts);
-
   return (
     <>
       <Nav isBlog={true} />

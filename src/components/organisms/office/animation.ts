@@ -1,8 +1,5 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -10,18 +7,6 @@ export default () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       if (!sectionRef.current) return;
-
-      const isMobile = window.innerWidth <= 768;
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: isMobile ? "top 75%" : "top 60%",
-          end: isMobile ? "20% center" : "15% center",
-          scrub: 2,
-          markers: false,
-          id: "office-animation",
-        },
-      });
 
       const imageTop = sectionRef.current.querySelector("[data-fs-animation='image-top']");
       const imageTop2 = sectionRef.current.querySelector("[data-fs-animation='image-top2']");
@@ -35,7 +20,7 @@ export default () => {
         if (element) {
           gsap.fromTo(
             element,
-            { y: index % 2 === 0 ? 50 : -50, opacity: 0.9 }, // Alterna direções para criar variedade
+            { y: index % 2 === 0 ? 50 : -50, opacity: 0.9 },
             {
               y: 0,
               opacity: 1,

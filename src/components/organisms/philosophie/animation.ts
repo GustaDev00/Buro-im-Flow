@@ -82,8 +82,8 @@ export default () => {
             clipPath: "inset(0% 0% 0 0%)",
             duration: 1.6,
           },
-        ),
-          "<";
+        );
+        tl.add("<");
       }
     }, sectionRef);
 

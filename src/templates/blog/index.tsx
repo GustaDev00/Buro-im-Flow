@@ -8,8 +8,6 @@ import { LatestArticles } from "@/components/organisms/latest-articles";
 import Nav from "@/shared/nav"; // import adicionado
 
 export const BlogTemplate: FC<HomeProps> = ({ values }) => {
-  console.log(values);
-
   if (!values) return null;
 
   return (

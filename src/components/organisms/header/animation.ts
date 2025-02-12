@@ -24,8 +24,8 @@ export default () => {
             clipPath: "inset(0 0% 0 0%)",
             duration: 1.2,
           },
-        ),
-          "<";
+        );
+        tl.add("<");
       }
 
       if (title) {
@@ -67,7 +67,8 @@ export default () => {
       const elements = [button, circle];
       elements.forEach((element, index) => {
         if (element) {
-          tl.fromTo(element, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, index * 0.2), "<";
+          tl.fromTo(element, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, index * 0.2);
+          tl.add("<");
         }
       });
 

@@ -26,8 +26,6 @@ export const metadata: Metadata = {
 const Home = async () => {
   const data = await listPosts();
 
-  // console.log(data);
-
   if (!data.length) return null;
 
   return <BlogTemplate values={data} />;

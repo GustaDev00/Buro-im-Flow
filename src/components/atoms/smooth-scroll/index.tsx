@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 export const SmoothScroll = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      lerp: 0.05, // Valor menor para scroll mais lento
+      lerp: 0.08,
     });
 
     const raf = (time: number) => {
