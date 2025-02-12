@@ -12,7 +12,7 @@ export const BlogTemplate: FC<HomeProps> = ({ values }) => {
 
   return (
     <>
-      <Nav isBlog={true} /> {/* Nav adicionado */}
+      <Nav isBlog={true} />
       <S.Home>
         <PostHighlight posts={values} />
         <LatestArticles values={values} />

@@ -1,3 +1,4 @@
+import { CustomBr } from "@/components/atoms/custom-br";
 import { FacebookIcon } from "@/components/svgs/facebook";
 import { InstagramIcon } from "@/components/svgs/instagram";
 
@@ -52,8 +53,13 @@ export default {
   },
   blog: {
     home: {
-      title: "Blog Fiberweb",
-      description: <>Creative Webseiten Effektives Marketing Smarte KI Lösungen</>,
+      title: "Blog Büro im Flow",
+      description: (
+        <>
+          Einfacher Zugang zu präzisen Ergebnissen und persönlicher
+          <CustomBr byViewport="desktop" /> Betreuung – digital, effizient und verlässlich.
+        </>
+      ),
     },
     copy: {
       copy: "Link kopieren",

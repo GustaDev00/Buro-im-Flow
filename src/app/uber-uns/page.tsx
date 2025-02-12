@@ -3,8 +3,8 @@ import { type ReactNode } from "react";
 import { UberUnsTemplate } from "@/templates/uber-uns";
 
 export const metadata: Metadata = {
-  title: "Fiber web - Creative Webseiten",
-  description: "Creative Webseiten Effektives Marketing Smarte KI Lösungen",
+  title: "Büro im Flow",
+  description: "Büro im Flow",
 };
 
 const UberUns = (): ReactNode => {
