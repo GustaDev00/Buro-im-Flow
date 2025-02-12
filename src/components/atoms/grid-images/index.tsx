@@ -6,10 +6,14 @@ export const GridImages = ({ ...props }) => {
   return (
     <S.GridImages {...props}>
       <S.Wrapper>
-        <S.ImgLarge src="/imgs/home/benefits/grid/large.png" alt="imagem 01" />
+        <S.ImgLarge
+          src="/imgs/home/benefits/grid/large.png"
+          alt="imagem 01"
+          data-fs-image="large"
+        />
       </S.Wrapper>
       <S.Wrapper>
-        <S.Content>
+        <S.Content data-fs-animation="content">
           <S.Container>
             <S.Imagelarge src="/imgs/home/benefits/grid/content-large.png" alt="imagem 02" />
             <S.ImageSmall src="/imgs/home/benefits/grid/content-small.png" alt="imagem 03" />
@@ -23,9 +27,21 @@ export const GridImages = ({ ...props }) => {
         </S.Content>
         <ResponsiveElement
           breakpoints={{
-            mobile: <S.ImgSmall src="/imgs/home/benefits/grid/mobile/small.png" alt="imagem 04" />,
+            mobile: (
+              <S.ImgSmall
+                src="/imgs/home/benefits/grid/mobile/small.png"
+                alt="imagem 04"
+                data-fs-animation="small"
+              />
+            ),
           }}
-          content={<S.ImgSmall src="/imgs/home/benefits/grid/small.png" alt="imagem 04" />}
+          content={
+            <S.ImgSmall
+              src="/imgs/home/benefits/grid/small.png"
+              alt="imagem 04"
+              data-fs-animation="small"
+            />
+          }
         />
       </S.Wrapper>
     </S.GridImages>

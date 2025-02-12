@@ -30,7 +30,7 @@ export default {
     ),
     description: (
       <>
-        Finanzen sollten kein Hindernis sein, sondern eine klare
+        Finanzen sollen kein Hindernis sein, sondern eine klare
         <CustomBr byViewport="desktop" /> Grundlage für Erfolg und Sicherheit. Der Ansatz basiert
         <CustomBr byViewport="desktop" />
         auf drei Grundwerten: Effizienz, Transparenz und

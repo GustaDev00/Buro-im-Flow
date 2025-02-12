@@ -1,8 +1,6 @@
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect } from "react";
-
-gsap.registerPlugin(ScrollTrigger);
+import SplitType from "split-type";
 
 export default () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -11,11 +9,13 @@ export default () => {
     const ctx = gsap.context(() => {
       if (!sectionRef.current) return;
 
+      const isMobile = window.innerWidth <= 768;
+
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 70%",
-          end: "bottom 30%",
+          start: isMobile ? "top 80%" : "top 70%",
+          end: isMobile ? "center center" : "bottom 30%",
           scrub: 1,
           markers: false,
           id: "benefits-img-animation",
@@ -25,12 +25,21 @@ export default () => {
       // Animação do título
       const title = sectionRef.current.querySelector("[data-fs-animation='title']");
       if (title) {
-        tl.from(title, {
-          opacity: 0,
-          y: 100,
-          duration: 0.8,
-          ease: "power4.out",
-        });
+        const splitTitle = new SplitType(title as HTMLElement, { types: "words" });
+        gsap.set(splitTitle.words, { clipPath: "inset(0 0 100% 0)", y: 50, opacity: 0 });
+
+        tl.to(
+          splitTitle.words,
+          {
+            clipPath: "inset(0 0 0% 0)",
+            opacity: 1,
+            y: 0,
+            duration: isMobile ? 0.5 : 0.8,
+            stagger: isMobile ? 0.05 : (index) => index * 0.1,
+            ease: "power3.out",
+          },
+          "<",
+        );
       }
 
       const images = sectionRef.current.querySelectorAll("[data-fs-animation='image']");
@@ -39,7 +48,7 @@ export default () => {
         {
           opacity: 0,
           y: 50,
-          duration: 0.8, // Reduziu o tempo para sincronizar com o texto
+          duration: 0.8,
           stagger: 0.2,
           ease: "power4.out",
         },
@@ -52,7 +61,7 @@ export default () => {
         items,
         {
           opacity: 0,
-          y: 50,
+          x: -50,
           duration: 0.8,
           ease: "power4.out",
           stagger: 0.2,

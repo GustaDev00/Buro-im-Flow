@@ -38,7 +38,7 @@ export const Account = () => {
               <CustomBr byViewport="desktop" /> und erleben Sie, wie einfach Buchhaltung sein kann:
             </S.Subtitle>
             <S.Iframe
-              src="https://www.youtube.com/embed/YEmI2MDpasE?si=3omL8ZsD5roMVHgQ"
+              src="https://www.youtube.com/embed/vQTMjZIgeY4?si=S91TV4BWSZLQ9ona"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"

@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
+import SplitType from "split-type";
 
 export default () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -28,20 +29,40 @@ export default () => {
       const circle = sectionRef.current.querySelector("[data-fs-animation='circle']");
 
       if (title) {
-        tl.from(title, {
-          y: 100,
-          opacity: 0,
-          duration: 0.8,
-          rotate: 15,
-        });
+        const splitTitle = new SplitType(title as HTMLElement, { types: "words" });
+        gsap.set(splitTitle.words, { clipPath: "inset(0 0 100% 0)", y: 50, opacity: 0 });
+
+        tl.to(
+          splitTitle.words,
+          {
+            clipPath: "inset(0 0 0% 0)",
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: (index) => index * 0.1,
+            ease: "power3.out",
+          },
+          "<",
+        );
       }
 
-      tl.from(description, {
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        ease: "power4.out",
-      });
+      if (description) {
+        const splitDescription = new SplitType(description as HTMLElement, { types: "words" });
+        gsap.set(splitDescription.words, { clipPath: "inset(0 0 100% 0)", y: 50, opacity: 0 });
+
+        tl.to(
+          splitDescription.words,
+          {
+            clipPath: "inset(0 0 0% 0)",
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: (index) => index * 0.1,
+            ease: "power3.out",
+          },
+          "<",
+        );
+      }
 
       tl.from(link, {
         y: 50,
@@ -50,12 +71,17 @@ export default () => {
         ease: "power4.out",
       });
 
-      tl.from(image, {
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        ease: "power4.out",
-      });
+      if (image) {
+        tl.fromTo(
+          image,
+          { clipPath: "inset(100% 0 0 0)" },
+          {
+            clipPath: "inset(0% 0 0 0)",
+            duration: 1.6,
+          },
+        ),
+          "<";
+      }
 
       tl.from(line, {
         width: 0,

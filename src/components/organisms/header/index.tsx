@@ -1,6 +1,6 @@
 import { HeaderProps } from "./props";
 import * as S from "./styles";
-import useAnimation from "./animation"; // descomentado
+import useAnimation from "./animation";
 
 export const Header = ({ title, description, img, link, ...props }: HeaderProps) => {
   const { sectionRef } = useAnimation();

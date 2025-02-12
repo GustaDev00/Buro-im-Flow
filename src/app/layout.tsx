@@ -9,6 +9,8 @@ import { GlobalStyles } from "@/styles/global";
 import { GSAPInitializer } from "@/components/atoms/gsap-initializer";
 import { Footer } from "@/shared/footer";
 import { Loading } from "@/components/atoms/loading";
+import { SmoothScroll } from "@/components/atoms/smooth-scroll";
+import { Cursor } from "@/components/organisms/Cursor";
 
 const RootLayout = ({
   children,
@@ -24,11 +26,14 @@ const RootLayout = ({
             <GSAPInitializer />
             <Loading />
             <main>
-              <Suspense>{children}</Suspense>
+              <Suspense>
+                <Cursor>{children}</Cursor>
+              </Suspense>
             </main>
             <Footer />
           </ThemeProvider>
         </StyledComponentsRegistry>
+        <SmoothScroll />
       </body>
     </html>
   );

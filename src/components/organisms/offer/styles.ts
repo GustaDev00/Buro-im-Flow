@@ -104,13 +104,19 @@ export const button = styled(ButtonSwipe)`
 `;
 
 export const Content = styled.div<{ $active?: boolean }>`
+  cursor: pointer;
   display: flex;
   position: relative;
   width: ${({ $active }) => ($active ? "93.1rem" : "21rem")};
   height: 75.5rem;
   border-radius: 5.4rem;
   overflow: hidden;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  background: #000;
+
+  &:hover {
+    opacity: 0.9 !important;
+  }
 
   ${({ $active }) =>
     $active &&

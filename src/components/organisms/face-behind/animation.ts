@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from "split-type";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,11 +25,21 @@ export default () => {
       // Animação do título
       const title = sectionRef.current.querySelector("[data-fs-animation='title']");
       if (title) {
-        tl.from(title, {
-          opacity: 0,
-          y: 50,
-          duration: 1,
-        });
+        const splitTitle = new SplitType(title as HTMLElement, { types: "words" });
+        gsap.set(splitTitle.words, { clipPath: "inset(0 0 100% 0)", y: 50, opacity: 0 });
+
+        tl.to(
+          splitTitle.words,
+          {
+            clipPath: "inset(0 0 0% 0)",
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: (index) => index * 0.1,
+            ease: "power3.out",
+          },
+          "<",
+        );
       }
 
       // Animação do conteúdo

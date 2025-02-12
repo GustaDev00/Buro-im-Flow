@@ -57,11 +57,6 @@ export default ({ isBlog }: { isBlog?: boolean }) => {
                     <span>Phone:</span> +41 79 934 67 83
                   </a>
                 </S.Social>
-                <S.Social>
-                  <a href={C.data.contact[1].link}>
-                    <span>E-Mail:</span> info@bueroimflow.ch
-                  </a>
-                </S.Social>
               </S.FooterModal>
             </S.WrapperModal>
           </S.Modal>

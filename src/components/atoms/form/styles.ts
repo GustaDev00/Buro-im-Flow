@@ -204,9 +204,15 @@ export const Item = styled.li`
 export const Link = styled.a`
   display: flex;
   align-items: center;
+  transition: opacity 0.4s ease;
 
   svg {
     margin-left: 1rem;
+  }
+
+  &:hover {
+    opacity: 0.6;
+    text-decoration: underline;
   }
 `;
 

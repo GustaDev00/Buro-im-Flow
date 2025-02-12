@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
+import SplitType from "split-type";
 
 export default () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -27,22 +28,39 @@ export default () => {
 
       // Title animation
       if (title) {
-        tl.from(title, {
-          y: 100,
-          opacity: 0,
-          duration: 0.8,
-          rotate: 15,
-        });
+        const splitTitle = new SplitType(title as HTMLElement, { types: "words" });
+        gsap.set(splitTitle.words, { clipPath: "inset(0 0 100% 0)", y: 50, opacity: 0 });
+
+        tl.to(
+          splitTitle.words,
+          {
+            clipPath: "inset(0 0 0% 0)",
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: (index) => index * 0.1,
+            ease: "power3.out",
+          },
+          "<",
+        );
       }
 
-      // Description animation
       if (description) {
-        tl.from(description, {
-          y: 50,
-          opacity: 0,
-          duration: 0.8,
-          ease: "power4.out",
-        });
+        const splitDescription = new SplitType(description as HTMLElement, { types: "words" });
+        gsap.set(splitDescription.words, { clipPath: "inset(0 0 100% 0)", y: 50, opacity: 0 });
+
+        tl.to(
+          splitDescription.words,
+          {
+            clipPath: "inset(0 0 0% 0)",
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: (index) => index * 0.1,
+            ease: "power3.out",
+          },
+          "<",
+        );
       }
 
       // Link animation
@@ -56,13 +74,17 @@ export default () => {
       }
 
       // Item (images) animation
-      tl.from(imgs, {
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        ease: "power4.out",
-        stagger: 0.2,
-      });
+      if (imgs) {
+        tl.fromTo(
+          imgs,
+          { clipPath: "inset(100% 100% 0 100%)" },
+          {
+            clipPath: "inset(0% 0% 0 0%)",
+            duration: 1.6,
+          },
+        ),
+          "<";
+      }
     }, sectionRef);
 
     return () => {

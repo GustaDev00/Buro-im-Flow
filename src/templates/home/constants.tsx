@@ -36,7 +36,7 @@ export default {
     {
       text: (
         <>
-          Effiziente und moderne Buchhaltungsprozesse dank der Nutzung von{" "}
+          Effiziente und moderne Buchhaltungsprozesse dank der Partnerschaft mit{" "}
           <strong>Run My Accounts</strong> – Ihrer digitalen Lösung für automatisierte Buchhaltung
           und effiziente Workflows.
         </>

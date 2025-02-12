@@ -4,8 +4,8 @@ import { ResponsiveElement } from "@/utils/responsive-element";
 import { useState } from "react";
 
 export const Offer = () => {
-  const { sectionRef } = useAnimation();
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState<number | null>(null);
+  const { sectionRef } = useAnimation({ setActive });
   const services = [
     {
       title: "Steuern",
@@ -40,7 +40,7 @@ export const Offer = () => {
   return (
     <S.Offer ref={sectionRef}>
       <S.Wrapper>
-        <S.Title data-fs-animation="title">Was ich anbieten</S.Title>
+        <S.Title data-fs-animation="title">Mein Angebot</S.Title>
         <S.Container>
           <ResponsiveElement
             breakpoints={{
@@ -72,6 +72,7 @@ export const Offer = () => {
                 $active={active === index}
                 onClick={() => setActive(index)}
                 data-fs-animation="item"
+                data-fs-link="cards"
               >
                 <S.Bg src={`/imgs/privatkunden/offer/card-${index + 1}.png`} alt="offer-bg" />
                 <S.Info>

@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
+import SplitType from "split-type";
 
 export default () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -35,28 +36,38 @@ export default () => {
       }
 
       if (title) {
-        tl.from(
-          title,
+        const splitTitle = new SplitType(title as HTMLElement, { types: "words" });
+        gsap.set(splitTitle.words, { clipPath: "inset(0 0 100% 0)", y: 50, opacity: 0 });
+
+        tl.to(
+          splitTitle.words,
           {
-            y: 50,
-            opacity: 0,
+            clipPath: "inset(0 0 0% 0)",
+            opacity: 1,
+            y: 0,
             duration: 0.8,
-            ease: "power4.out",
+            stagger: (index) => index * 0.1,
+            ease: "power3.out",
           },
-          "-=0.6",
+          "<",
         );
       }
 
       if (text) {
-        tl.from(
-          text,
+        const splitDescription = new SplitType(text as HTMLElement, { types: "words" });
+        gsap.set(splitDescription.words, { clipPath: "inset(0 0 100% 0)", y: 50, opacity: 0 });
+
+        tl.to(
+          splitDescription.words,
           {
-            y: 50,
-            opacity: 0,
+            clipPath: "inset(0 0 0% 0)",
+            opacity: 1,
+            y: 0,
             duration: 0.8,
-            ease: "power4.out",
+            stagger: (index) => index * 0.1,
+            ease: "power3.out",
           },
-          "-=0.6",
+          "<",
         );
       }
 

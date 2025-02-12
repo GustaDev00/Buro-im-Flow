@@ -1,10 +1,12 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from "split-type";
 
-gsap.registerPlugin(ScrollTrigger);
+interface Props {
+  setActive: (active: number) => void;
+}
 
-export default () => {
+export default ({ setActive }: Props) => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -29,22 +31,49 @@ export default () => {
 
       // Animating the title
       if (title) {
-        tl.from(title, {
-          y: 100,
-          opacity: 0,
-          duration: 0.8,
-          rotate: 15,
-        });
+        const splitTitle = new SplitType(title as HTMLElement, { types: "words" });
+        gsap.set(splitTitle.words, { clipPath: "inset(0 0 100% 0)", y: 50, opacity: 0 });
+
+        tl.to(
+          splitTitle.words,
+          {
+            clipPath: "inset(0 0 0% 0)",
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: (index) => index * 0.1,
+            ease: "power3.out",
+          },
+          "<",
+        );
       }
 
       // Animating the individual service items
-      tl.from(items, {
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        ease: "power4.out",
-        stagger: 0.2,
-      });
+      if (!isMobile) {
+        tl.from(
+          items,
+          {
+            opacity: 0,
+            x: (index) => `${index * -24}rem`,
+            duration: 0.8,
+            ease: "power4.out",
+            stagger: 0.2,
+            onComplete: () => {
+              gsap.delayedCall(0.4, () => setActive(0));
+            },
+          },
+          "<",
+        );
+      } else {
+        tl.from(items, {
+          opacity: 0,
+          y: 50,
+          duration: 0.8,
+          ease: "power4.out",
+          stagger: 0.2,
+          onComplete: () => setActive(0),
+        });
+      }
 
       // Animating the button
       tl.from(button, {

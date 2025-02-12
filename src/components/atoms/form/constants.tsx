@@ -25,7 +25,7 @@ export default {
         {
           label: "Ihre Nachricht",
           name: "message",
-          placeholder: "Ich hätte gerne eine Offerte bezüglich…",
+          placeholder: "Ich habe Interesse an ihrem Angebot bezüglich…",
           type: "textarea",
         },
       ],

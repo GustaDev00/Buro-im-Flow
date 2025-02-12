@@ -151,11 +151,20 @@ export const Form = () => {
               <S.List $line={true} data-timeline={`list-phones`}>
                 <S.Item data-timeline={`list-item-phone`}>
                   <S.Link
-                    href="https://web.whatsapp.com/send?phone=+41%2079%20934%2067%2083"
+                    href="tel:+41799346783"
                     title="Phone: +41 79 934 67 83"
                     data-timeline={`phone-link`}
                   >
                     Phone: <S.Span data-timeline={`phone-content`}> +41 79 934 67 83</S.Span>
+                  </S.Link>
+                </S.Item>
+                <S.Item data-timeline={`list-item-phone`}>
+                  <S.Link
+                    href="https://web.whatsapp.com/send?phone=+41%2079%20934%2067%2083"
+                    title="Phone: +41 79 934 67 83"
+                    data-timeline={`phone-link`}
+                  >
+                    whatsapp
                     <FaWhatsapp />
                   </S.Link>
                 </S.Item>

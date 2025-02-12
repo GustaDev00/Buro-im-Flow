@@ -35,10 +35,7 @@ export default {
         <CustomBr byViewport="desktop" /> echte Mehrwerte zu liefern. Meine Arbeit basiert auf drei
         <CustomBr byViewport="desktop" />
         Prinzipien: <strong>Effizienz, Transparenz</strong> und{" "}
-        <strong>
-          persönlicher
-          <CustomBr byViewport="desktop" /> Betreuung.
-        </strong>
+        <strong>persönlicher Betreuung.</strong>
         <br />
         <br />
         Mit modernen, digitalen Lösungen mache ich
