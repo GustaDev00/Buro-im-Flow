@@ -121,7 +121,7 @@ export const Content = styled.div<{ $active?: boolean }>`
   height: 75.5rem;
   border-radius: 5.4rem;
   overflow: hidden;
-  transition: width 0.3s ease, opacity 0.3s ease;
+  transition: width 0.3s ease;
   background: #000;
 
   &:hover {
