@@ -252,7 +252,7 @@ export const ButtonClose = styled(Menu)`
   &:after {
     position: absolute;
     content: "";
-    right: 3rem;
+    right: 2rem;
     display: block;
     width: 2rem;
     height: 0.2rem;
