@@ -225,7 +225,7 @@ export const Footer = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                  Kontaktieren Sie uns
+                  Kontaktieren Sie mich
                 </S.Link>
               </S.Item>
 

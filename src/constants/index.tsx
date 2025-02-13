@@ -24,11 +24,11 @@ export default {
       { title: "Unternehmen", href: "/unternehmen" },
       { title: "Blog", href: "/blog" },
       { title: "Über uns", href: "/uber-uns" },
-      { title: "Kontakt ", href: "/kontakt", text: "Kontaktieren Sie uns" },
+      { title: "Kontakt ", href: "/kontakt", text: "Kontaktieren Sie mich" },
     ],
     contact: [
       {
-        text: "Phone",
+        text: "Telefon",
         content: "+41 79 934 67 83",
         link: "tel:+41799346783",
       },

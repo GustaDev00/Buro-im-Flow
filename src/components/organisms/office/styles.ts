@@ -64,6 +64,10 @@ export const ImageRectangle = styled(LazyImage)`
 export const ImageCircle = styled(LazyImage)`
   width: 30.1rem;
   height: 30.1rem;
+
+  ${mediaMaxWidth("mobile")`
+    margin-top: 4rem;
+  `}
 `;
 
 export const Content = styled.article`
@@ -87,8 +91,8 @@ export const Title = styled.h2`
   line-height: 7.8rem;
 
   ${mediaMaxWidth("mobile")`
-    font-size: 5.8rem;
-    line-height: 6.2rem;
+    font-size: 3.4rem;
+    line-height: 5.2rem;
   `}
 `;
 
@@ -103,6 +107,8 @@ export const Text = styled.p`
 
   ${mediaMaxWidth("mobile")`
     margin: 3.1rem 0;
+    font-size: 2rem;
+    line-height: 2.8rem;
   `}
 `;
 

@@ -18,6 +18,7 @@ export const Bg = styled.div`
 export const Image = styled(LazyImage)`
   position: absolute;
   width: 100%;
+  height: 100%;
   object-fit: cover;
   left: 0;
   top: 0;

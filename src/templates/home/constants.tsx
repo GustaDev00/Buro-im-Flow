@@ -32,6 +32,7 @@ export default {
         alt: "SwissAccounting",
         src: "/imgs/home/intro/SwissAccounting.png",
       },
+      href: "https://swissaccounting.org/lp_eingeschraenkte_revision?utm_term=swiss%20accounting&utm_campaign=2025_LG_eingeschr%C3%A4nkte_Revision&utm_source=adwords&utm_medium=ppc&hsa_acc=4954137662&hsa_cam=21932202136&hsa_grp=171309516912&hsa_ad=722235442484&hsa_src=g&hsa_tgt=kwd-2309184404283&hsa_kw=swiss%20accounting&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAiAzba9BhBhEiwA7glbahE9KHCgsaEWN0JiGwgv_xp0C6qrB2i9fT35r75QyuZUp3Xs3PusBBoCM24QAvD_BwE",
     },
     {
       text: (
@@ -45,6 +46,7 @@ export default {
         alt: "SwissAccounting",
         src: "/imgs/home/intro/run-accont.png",
       },
+      href: "https://www.runmyaccounts.ch/",
     },
   ],
   technology: {

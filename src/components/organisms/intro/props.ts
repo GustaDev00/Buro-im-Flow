@@ -7,5 +7,6 @@ export interface IntroProps {
       alt: string;
       src: string;
     };
+    href: string;
   }[];
 }

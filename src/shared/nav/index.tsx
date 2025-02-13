@@ -1,9 +1,18 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect } from "react";
 import * as S from "./styles";
 import C from "@/constants";
 
 export default ({ isBlog }: { isBlog?: boolean }) => {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [open]);
+
   const { contact, navigation } = C.data;
 
   const handleClick = useCallback(() => {
@@ -40,7 +49,7 @@ export default ({ isBlog }: { isBlog?: boolean }) => {
             <S.WrapperModal>
               <S.HeaderModal>
                 <S.TextMenu>Menu</S.TextMenu>
-                <S.ButtonClose onClick={handleClick}>Fechar</S.ButtonClose>
+                <S.ButtonClose onClick={handleClick}>Schliessen</S.ButtonClose>
               </S.HeaderModal>
               <S.MainModal>
                 <S.List>
@@ -54,7 +63,7 @@ export default ({ isBlog }: { isBlog?: boolean }) => {
               <S.FooterModal>
                 <S.Social>
                   <a href={C.data.contact[0].link}>
-                    <span>Phone:</span> +41 79 934 67 83
+                    <span>Telefon:</span> +41 79 934 67 83
                   </a>
                 </S.Social>
               </S.FooterModal>

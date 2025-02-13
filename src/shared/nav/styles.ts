@@ -400,6 +400,7 @@ export const Overlay = styled.div<{ $open: boolean }>`
   width: 100%;
   height: 100vh;
   top: 0;
+  bottom: 0;
   left: 0;
   z-index: 20;
   opacity: ${({ $open }) => ($open ? 1 : 0)};
@@ -412,9 +413,5 @@ export const Overlay = styled.div<{ $open: boolean }>`
     ${({ $open }) => mediaMaxWidth("mobile")`
       right: ${$open ? "0" : "-100%"};
     `}
-  }
-
-  @supports (-webkit-touch-callout: none) {
-    height: 100svh; /* Ajusta para Safari */
   }
 `;

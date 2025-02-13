@@ -30,6 +30,8 @@ export const Container = styled.div`
 `}
 `;
 
+export const Link = styled.a``;
+
 export const Img = styled(LazyImage)`
   width: 24.7rem;
   height: 7.8rem;

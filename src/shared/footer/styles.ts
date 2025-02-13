@@ -125,6 +125,7 @@ export const WrapperInfo = styled.div`
 `;
 
 export const Info = styled.div`
+  position: relative;
   padding: 0rem 12rem;
   display: flex;
   justify-content: space-between;
@@ -133,6 +134,7 @@ export const Info = styled.div`
   font-weight: 400;
   line-height: 140%;
   border-radius: 0rem 0rem 2.2rem 2.2rem;
+  z-index: 10;
 
   ${mediaMaxWidth("mobile")`
     padding: 3.8rem 2.2rem;

@@ -12,11 +12,12 @@ export default () => {
     const ctx = gsap.context(() => {
       if (!sectionRef.current) return;
 
+      const isMobile = window.innerWidth <= 768;
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 80%",
-          end: "bottom center",
+          start: isMobile ? "top 75%" : "top 80%",
+          end: isMobile ? "20% center" : "bottom center",
           scrub: 1,
           markers: false,
         },
