@@ -69,7 +69,7 @@ export const Subtitle = styled.h3`
   letter-spacing: -0.2429rem;
 
   ${mediaMaxWidth("mobile")`
-    font-size: 3rem;
+    font-size: 3.4rem;
     line-height: 3.4rem;
     letter-spacing: -0.172rem;
   `}
@@ -85,9 +85,9 @@ export const Text = styled.p`
   letter-spacing: -0.1316rem;
 
   ${mediaMaxWidth("mobile")`
-    width: 98%;
-    font-size: 2.2rem;
-    line-height: 2.8rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    letter-spacing: -0.0911rem;
     letter-spacing: -0.1113rem;
   `}
 `;

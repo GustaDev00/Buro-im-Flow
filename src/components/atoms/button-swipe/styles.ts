@@ -21,7 +21,7 @@ const swipeStyles = css`
   svg {
     width: 3.1852rem;
     height: 3.1852rem;
-    transform: translateX(-1rem);
+    transform: translateX(-0.6rem);
     transition: transform 0.4s ease;
   }
 
@@ -36,7 +36,7 @@ const swipeStyles = css`
   ${mediaMaxWidth("mobile")`
     padding: 1.7rem 3rem;
     gap: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   `}
 `;
 

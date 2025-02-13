@@ -13,10 +13,6 @@ export const Header = styled.div`
   @supports (-webkit-touch-callout: none) {
     height: 100svh;
   }
-
-  ${mediaMaxWidth(`mobile`)`
-  height: auto;
-  `}
 `;
 
 export const Wrapper = styled(_Wrapper)`
@@ -26,7 +22,9 @@ export const Wrapper = styled(_Wrapper)`
   justify-content: end;
 
   ${mediaMaxWidth(`mobile`)`
-  padding-top: 22.1rem;
+    padding-top: 22.1rem;
+    justify-content: center;
+    gap: 2.4rem;
   `}
 `;
 
@@ -39,14 +37,9 @@ export const Img = styled(LazyImage)`
   width: 92rem;
   object-fit: cover;
 
-  ${mediaMaxWidth(`mobile`)``}
-
-  ${mediaMaxWidth(`desktop1024`)``}
-
-${mediaMaxWidth("isMobileOrTabletVertical")`
-    display: none;
-    
-`}
+  ${mediaMaxWidth("isMobileOrTabletVertical")`
+      display: none;
+  `}
 `;
 
 export const Title = styled.h1`
@@ -56,8 +49,8 @@ export const Title = styled.h1`
   line-height: 10.4rem;
 
   ${mediaMaxWidth(`mobile`)`
-    font-size: 5rem;
-    line-height: 6.8rem;
+    font-size: 3.4rem;
+    line-height: 5.2rem;
     `}
 `;
 
@@ -70,10 +63,10 @@ export const Description = styled.p`
   margin: 5rem 0 9.3rem 0;
 
   ${mediaMaxWidth(`mobile`)`
-    font-size: 2.2rem;
-    line-height: 4.2rem;
-    letter-spacing: -0.1113rem;
-    margin: 2.6rem 0 2.6rem 0;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.081rem;
+    margin: 0;
   `}
 `;
 

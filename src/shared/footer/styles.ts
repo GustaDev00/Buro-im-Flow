@@ -47,7 +47,7 @@ export const Wrapper = styled(_Wrapper)`
     flex-direction: column;
     align-items: flex-start;
     gap: 6.4rem;
-    padding: 8rem 2.2rem;
+    padding: 5.2rem 2.2rem;
   `}
 `;
 
@@ -117,6 +117,11 @@ export const WrapperInfo = styled.div`
   justify-content: space-between;
   border-top: 0.1rem solid rgba(0, 0, 0, 0.15);
   padding: 3rem 0;
+
+  ${mediaMaxWidth("mobile")`
+    flex-direction: column;
+    gap: 2.6rem;
+  `}
 `;
 
 export const Info = styled.div`

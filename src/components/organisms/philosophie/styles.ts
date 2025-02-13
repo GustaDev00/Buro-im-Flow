@@ -36,6 +36,10 @@ export const Title = styled.h2`
   padding-top: 8.4rem;
   font-size: 3.4rem;
   line-height: 5.8rem;
+
+  br {
+    display: none;
+  }
   `}
 `;
 
@@ -49,8 +53,8 @@ export const Description = styled.p`
 
   ${mediaMaxWidth("mobile")`
   padding: 4.2rem 0;
-  font-size: 1.48rem;
-  line-height: 4rem;
+  font-size: 1.6rem;
+  line-height: 3.4rem;
   `}
 `;
 

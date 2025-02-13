@@ -17,7 +17,7 @@ export default {
     ),
     img: {
       alt: "imagem 1",
-      src: "/imgs/privatkunden/header/bg.png",
+      src: "/imgs/kontakt/header/bg.png",
     },
     link: "/kontakt",
   },

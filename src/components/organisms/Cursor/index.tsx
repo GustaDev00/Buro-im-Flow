@@ -71,7 +71,7 @@ export const Cursor: FC<CursorProps> = ({ children }) => {
     <>
       {children}
       <S.Cursor ref={cursorRef} $type={linkType}>
-        <S.Text>Sicht</S.Text>
+        <S.Text>Mehr</S.Text>
       </S.Cursor>
     </>
   );

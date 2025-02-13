@@ -19,7 +19,8 @@ export const Wrapper = styled.div`
   `}
 
   ${mediaMaxWidth("mobile")`
-    padding: 12rem 2.2rem;
+    padding: 5.9rem 2.2rem;
+    gap: 3.6rem;
   `}
 `;
 
@@ -108,8 +109,8 @@ export const Title = styled.h2`
   `}
 
   ${mediaMaxWidth("mobile")`
-    font-size: 3.3rem;
-    line-height: 5.2rem;
+    font-size: 2.8rem;
+    line-height: 3.7rem;
   `}
 `;
 
@@ -128,9 +129,10 @@ export const Text = styled.p`
 
   ${mediaMaxWidth("mobile")`
     width: 100%;
-    font-size: 2rem;
-    line-height: 4rem;
-    letter-spacing: -0.1012rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    letter-spacing: -0.081rem;
   `}
 `;
 
@@ -147,6 +149,7 @@ export const Container = styled.div`
 export const Button2 = styled(ButtonSwipe)`
   background: transparent;
   color: #fff;
+  font-size: 2rem;
   transition: background 0.3s, color 0.3s;
 
   &:hover {

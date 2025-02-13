@@ -105,8 +105,8 @@ export const SubTitle = styled.h3`
   letter-spacing: -0.0003rem;
 
   ${mediaMaxWidth("mobile")`
-    font-size: 2rem;
-    line-height: 3.6rem;
+    font-size: 2.2rem;
+    line-height: 3.4rem;
     letter-spacing: -0.0002rem;
   `}
 `;

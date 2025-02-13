@@ -33,9 +33,9 @@ export const Title = styled.h2`
   line-height: 7.5rem;
 
   ${mediaMaxWidth("mobile")`
-  padding-top: 8.4rem;
-  font-size: 3.4rem;
-  line-height: 5.8rem;
+  padding-top: 2.2rem;
+  font-size: 2.4rem;
+  line-height: 4rem;
   `}
 `;
 
@@ -48,9 +48,9 @@ export const Description = styled.p`
   padding: 5.9rem 0;
 
   ${mediaMaxWidth("mobile")`
-  padding: 4.2rem 0;
-  font-size: 1.48rem;
-  line-height: 4rem;
+  padding: 2.2rem 0;
+  font-size: 1.6rem;
+  line-height: 3.4rem;
   `}
 `;
 
@@ -85,7 +85,6 @@ export const Img = styled(LazyImage)`
   ${mediaMaxWidth("mobile")`
     width: 100%;
     height: 40.7rem;
-    object-fit: cover;
   `}
 `;
 
@@ -99,6 +98,6 @@ export const Shapes = styled.div`
   align-items: center;
 
   ${mediaMaxWidth("mobile")`
-  padding-bottom: 4.2rem 0;
+  padding-bottom: 2.8rem;
   `}
 `;

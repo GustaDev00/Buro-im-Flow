@@ -164,7 +164,7 @@ export const Form = () => {
                     title="Phone: +41 79 934 67 83"
                     data-timeline={`phone-link`}
                   >
-                    whatsapp
+                    Whatsapp
                     <FaWhatsapp />
                   </S.Link>
                 </S.Item>

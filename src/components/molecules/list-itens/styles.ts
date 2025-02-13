@@ -7,7 +7,7 @@ export const ListItens = styled.ul`
   gap: 7.7rem;
 
   ${mediaMaxWidth("mobile")`
-    gap: 8.2rem;
+    gap: 2.4rem;
   `}
 `;
 
@@ -43,6 +43,10 @@ export const Title = styled.h3`
   text-align: left;
   font-size: 2.9rem;
   font-weight: 700;
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 2.4rem;
+  `}
 `;
 
 export const Text = styled.p`
@@ -52,4 +56,9 @@ export const Text = styled.p`
   line-height: 3.4rem;
   letter-spacing: -0.1214rem;
   margin-top: 1.4rem;
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 1.8rem;
+    line-height: 3.4rem;
+  `}
 `;

@@ -26,6 +26,10 @@ export const Content = styled.article`
   display: flex;
   flex-direction: column;
   gap: 9.5rem;
+
+  ${mediaMaxWidth("mobile")`
+    gap: 4.2rem;
+  `}
 `;
 
 export const Title = styled.h2`
@@ -35,8 +39,8 @@ export const Title = styled.h2`
   line-height: 6.5rem;
 
   ${mediaMaxWidth("mobile")`
-    font-size: 3.8rem;
-    line-height: 5.8rem;
+    font-size: 2.8rem;
+    line-height: 4rem;
   `}
 `;
 

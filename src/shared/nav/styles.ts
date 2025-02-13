@@ -162,12 +162,12 @@ export const Menu = styled.button`
 
   ${mediaMaxWidth("mobile")`
     display: flex;
-  width: 14.8rem;
-  height: 4.5rem;
-  padding: 0rem 1.2rem;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+    width: 14.8rem;
+    height: 4.5rem;
+    padding: 0rem 1.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   `}
 `;
 
@@ -218,6 +218,10 @@ export const HeaderModal = styled.header`
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 2.4rem;
+
+  ${mediaMaxWidth("mobile")`
+    padding-bottom: 0;
+  `}
 `;
 
 export const TextMenu = styled.p`
@@ -229,8 +233,8 @@ export const TextMenu = styled.p`
   line-height: 9.2rem;
 
   ${mediaMaxWidth("mobile")`
-    font-size: 4.8rem;
-    line-height: 6.8rem;
+    font-size: 2.8rem;
+    line-height: 3.8rem;
   `}
 `;
 
@@ -269,7 +273,7 @@ export const ButtonClose = styled(Menu)`
   }
 
   ${mediaMaxWidth("mobile")`
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
   `}
 `;
 
@@ -332,7 +336,8 @@ export const Item = styled.a`
   }
 
   ${mediaMaxWidth("mobile")`
-    font-size: 2.8rem;
+    font-size: 2rem;
+    line-height: 3.4rem;
   `}
 `;
 
@@ -377,6 +382,11 @@ export const Social = styled.p`
   span {
     font-weight: 500;
   }
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  `}
 `;
 
 export const Black = styled.div`
